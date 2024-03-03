@@ -38,7 +38,7 @@
 <p>x, y, z or any other alphabets that are used as “placeholders” to store values ( data ) are known as variables.</p>
 <h2 id="data-types">Data types</h2>
 <p>The variables defined form equations when used. To solve the equations we need them to hold specific types of values and ‘data type’ is the name being use to define those specific values.<br>
-== In Programming language it is a set of data with values having predefined characteristics ==</p>
+<em>In Programming language it is a set of data with values having predefined characteristics</em></p>
 <blockquote>
 <p>Ex. : string, integer, boolean, long int, short int, etc</p>
 </blockquote>
