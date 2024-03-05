@@ -293,4 +293,53 @@ public class selection_sort {
 
 ```
 
+> Time complexity : O(n^2^)
+> Finding minimum in unsorted segment of length k requires one scan, k steps
+> T(n) = n + (n-1) + (n-2) + ..... + 1 = n(n+1)/2 = O(n^2^)
+
+## Selection Sort ~Recursive~
+
+*Algorithm*
+SelectionSort(A,start,n) // Sort A from start to n-1
+
+if (start >= n-1)
+return;
+
+// Locate minimum element and move to start of segment
+minpos = start;
+for (i = start+1; i < n; i++)
+if (A[i] < A[minpos])
+minpos = i;
+
+swap(A,start,minpos)
+
+// Recursively sort the rest
+SelectionSort(A,start+1,n)
+
+
+```python
+def selection_sort_recursive(A, start, n):
+    if start >= n - 1:
+        return
+    
+    # Locate minimum element and move to start of segment
+    minpos = start
+    for i in range(start + 1, n):
+        if A[i] < A[minpos]:
+            minpos = i
+    
+    # Swap elements
+    A[start], A[minpos] = A[minpos], A[start]
+    
+    # Recursively sort the rest
+    selection_sort_recursive(A, start + 1, n)
+
+# Example usage:
+array = [64, 25, 12, 22, 11]
+selection_sort_recursive(array, 0, len(array))
+
+print("Sorted array:", array)
+
+```
+
 
