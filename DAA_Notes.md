@@ -61,12 +61,22 @@ The flowchart above describes the decrease in time complexity, of the rate of gr
 > * Best Case 
 > * Averge Case
 
-##  Big-O Notation
+## Asymptotic Notation
+[Reference : Aysmptotic notations - Big-O,Ω and theta](https://www.youtube.com/watch?v=A03oI0znAoc)
+
+
+##  Big-O Notation 
+*This shows upper bound of a function
 *Represented as f(n) = O(g(n)), i.e. for larger values of n, f(n) = g(n)
 
 
+## Big-Ω Notation
+* This shows lower bound of a function
 
 
+
+## Theta Notation
+* This shows the average bound of afunction
 <hr>
 
 # Arrays and Linked Lists 
@@ -80,4 +90,47 @@ It is a DS used to store collections of data, and it has the following propertie
 * Does not waste memory space 
 
 ### Main linked list operations : 
-* Insert : Inserts and element into the list
+* **Insert** : Inserts an element into the list
+* **Delete** : Deletes an element from the list : 
+
+### Auxillary linked list operations
+* **Delete List** : Removes all the elements of the list / disposes of the list 
+* **Count** : Returns the number of elements in the list 
+* Find n^th^ node from the end of the list
+
+<hr>
+
+## Arrays 
+**![](https://lh7-us.googleusercontent.com/u1tT-MC3ilPz4B14Z2NyewoKneBuAs41xufwguVhYx6IxN7KlHDKjs_dQOzdfMnpiQOQxgySPUvwLUH8dH_z7XApN1KkeJRDNGB37wRtLl1jQvv9FY3TBTzKOYWC3wO4wQSt5FNPDuPy1asdyXZj5_4)**
+
+### Advantages of Arrays : 
+1. Simple and easy to use 
+2. Faster access to the elements
+
+### Disadvantages of Arrays : 
+1. **Fixed Size** : The size of the array is static ( specify the array size before using it ) 
+2.**One block allocation** : To allocate the array at the beginning itself, sometimes it may not be possible to get the memory for the complete array.
+3. **Complex position-based insertion** : TO insert an element at a given position we may need to shift the elements. This will create a position for us to insert the new element at the desired position.
+
+==The main disadvantage of linked lists is the long access time for any element in a linked list==
+
+## Difference between Linked Lists and Arrays
+**![](https://lh7-us.googleusercontent.com/NAA1UFQ0FDQeuqWy0qmLmAL3aa8nVEAc7xyeI33P_7z_wl6LB-HX0YPwEFI0Ul3mlQscFeqcspIVXxbLGESJcB6eb4I3dLwD8-16mUQPMTdd8XUI9H8NBzPXFhLimice1EWISd3OotRYumeAUyyi28g)**
+
+
+# Stacks and Queues
+
+## Stacks
+A stack is a simple data structure used for storing data. In this the order that they arrive in is important, just like a stack of plates, the first one stacked is the last to be used.
+
+> Two operations that can be done on astack are "Push" (insert data ) and "Pop" ( remove data )
+
+**![](https://lh7-us.googleusercontent.com/eB8AtQSRUY1d89s7QtMfoSSsiVcKzPgAbnwL6hhH5-EJyjPV77aE7FMjnH1QGBbiJluc-malu0khGY975dkPQyWkYZgZTEJwpv1m9Yk_DB32auUOUPxUCTVRtz38hemQMRklcb4frrTUsXEKywRM89Q)**
+
+
+
+
+
+
+
+
