@@ -215,5 +215,82 @@ def bsearch(k, array, l, r) :
 > T(0) = 1
 > T(n) = 1 + T(n/2)
 
+Therefore if we unwind the recurrence
+> T(n) = 1 + 1 + T(n/2^2^) = .....
+> T(n) = 1 + 1 + ...... + T(n/2^k^)
+> T(n) = 1 + 1 + ... + 1 + T(n/2^logn^) = O(logn)
+
+**Binary search works only for arrays**
+
+## Selection Sort 
+The idea here is to move the item into it's correct place in the final sorted list ( Not to use another extra array )
+
+*Algorithm*
+SelectionSort(A,n) // Sort A of size n
+
+for (startpos = 0; startpos < n; startpos++)
+// Scan segments A[0]..A[n-1], A[1]..A[n-1], ...
+
+minpos = startpos;
+for (i = minpos+1; i < n; i++)
+if (A[i] < A[minpos])
+minpos = i;
+
+swap(A,startpos,minpos)
+
+*Java Code*
+
+```java
+import java.io.*;
+import java.util.Scanner;
+
+public class selection_sort {
+    
+    void sort(int arr[]) {
+        int n = arr.length;
+
+        // Traversing the array
+        for(int i = 0; i < n; i++) {
+            int min_idx = i;
+            for(int j = i + 1; j < n; j++) {
+                if(arr[j] < arr[min_idx])
+                    min_idx = j;
+            }
+
+            // Time to swap them
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        selection_sort ob = new selection_sort();
+
+        // int arr[] = {24, 70, 22, 4, 65, 7, 21};
+        System.out.print("Input the size of the array to be sorted : ");
+        int size = scanner.nextInt();
+
+        int arr[] = new int[size];
+
+        System.out.print("Input the elements of the array : ");
+        for(int i = 0; i < size; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        scanner.close();
+
+        ob.sort(arr);
+        System.out.println("Sorted Array");
+        int n = arr.length;
+        for(int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+            System.out.println();
+        }
+    }
+}
+
+```
 
 
