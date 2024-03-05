@@ -1,4 +1,7 @@
 #  MSF Notes for MST
+> Author : Aaron Augustine
+
+
 ## Theory of Automata :
 
 > The study of abstract machines and the computational problems solved using these machines is called the Theory of Automata.
