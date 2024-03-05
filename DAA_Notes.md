@@ -128,9 +128,92 @@ A stack is a simple data structure used for storing data. In this the order that
 **![](https://lh7-us.googleusercontent.com/eB8AtQSRUY1d89s7QtMfoSSsiVcKzPgAbnwL6hhH5-EJyjPV77aE7FMjnH1QGBbiJluc-malu0khGY975dkPQyWkYZgZTEJwpv1m9Yk_DB32auUOUPxUCTVRtz38hemQMRklcb4frrTUsXEKywRM89Q)**
 
 
+# Searching and Sorting 
+
+## Unsorted Case  
+In the situation that we need to find an element within an unsorted array, we'd follow the simple process 
+
+*Algorithm*
+
+function search(A,K)
+
+i = 0;
+
+while i < n and A[i] != K do
+i = i+1;
+
+if i < n
+return i;
+else
+return -1;
 
 
+*Python Code*
+```python
+def search(array, k ):
+	i = 0
+	n = len(array)
+while i < n and A[i] != k : 
+	i = i + 1
 
+if i <n : 
+	return i;
+else : 
+	return -1;
+
+#remaining code to input the values into unsorted search
+```
+
+> Worst case would be the need to scan the entire sequence A. 
+> * Time complexity : O(n)
+
+==Now let us look at the case where A is sorted==
+Steps to follow : 
+* Compare k with midpoint of A
+* If midpoint is K, the value is found
+* If K < midpoint, search left half of the array
+* If K > midpoint, search right half of the array
+
+## Binary Search 
+
+*Algorithm*
+bsearch(K,A,l,r) // A sorted, search for K in A[l..r-1]
+
+if (r - l == 0) return(false)
+
+mid = (l + r) div 2 // integer division
+
+if (K == A[mid]) return (true)
+
+if (K < A[mid])
+
+return (bsearch(K,A,l,mid))
+
+else
+
+return (bsearch(K,A,mid+1,r))
+
+
+*Python Code*
+```python
+def bsearch(k, array, l, r) :
+	if ( r - l == 0):
+		return false
+	
+	mid = ( l + r )/2
+	if ( k == arra[mid]) : 
+		return true
+	if ( k < array[mid]):
+		return (bsearch(k, array, l, mid))
+	else:
+		return (bsearch(k, array, mid+1, r))
+
+#remaining code to input the values into bsearch
+```
+
+> T(n) : time to search an array of size n :
+> T(0) = 1
+> T(n) = 1 + T(n/2)
 
 
 
