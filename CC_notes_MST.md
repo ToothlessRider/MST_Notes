@@ -6,10 +6,13 @@
 
 [Cloud Computing mcqs for CT](https://gist.github.com/GravenHawkX/330f5dcd1afb601b0a7647cac400db29)
 
-## Week 1 
-### Lecture 1 
+<hr>
 
-> [Reference Link : Lec 1](https://archive.nptel.ac.in/courses/106/105/106105167/)
+> [Reference Link : NPTEL course](https://archive.nptel.ac.in/courses/106/105/106105167/)
+
+<hr>
+
+## Questions for MST
 
 Q1. What are the different trends in computing? ==GDUCC==
 Ans. There are 5 types of trends in Computing : 
@@ -30,20 +33,18 @@ Ans.
 
 <hr>
 
-
-
 Q3. What are the different types of grids ? ==CDCNU==
 Ans. There are 5 different types of drigs
 
-1. Computational Grid : 
+1. **Computational Grid** : 
 	*	Access to pool of processing power for computation intensive computing.
-2. Data Grid : 
-	* Infra to support *storage*, *discovery*, *handling*, *publication* and *manipulation* of data.
-3. Collaboration Grid : 
+2. **Data Grid** : 
+	* Infra to support ==storage==, ==discovery==, ==handling==, ==publication== and ==manipulation== of data.
+3. **Collaboration Grid** : 
 	* Collaboration on different projects without revealing sensitive information.
-4. Network Grid : 
+4. **Network Grid** : 
 	* Fault-tolerant and high performance comm^n^ services.
-5. Utility Grid : 
+5. **Utility Grid** : 
 	* Ultimate form. Data and computation cycles as well as software or any other resource is shared.
 
 <hr>
@@ -58,16 +59,11 @@ Ans.
 <hr>
 
 
-Q5. What is Cluster Computing ?
+Q5. What is Cluster Computing and what are the components of a cluster ?
 Ans 
 * It is a type of parallel or dsitributed Computer system, where inter connected stand alone computers work together as  single computing unit.
 * Key components are : ==computers, OS's, middleware, parallel programming env, and applications.==
 
-<hr>
-
-
-Q6. What are the components of a cluster ?
- Ans. 
  1. Cluster nodes
  2. Cluster Network
  3. Network Characterization
@@ -75,7 +71,7 @@ Q6. What are the components of a cluster ?
 <hr>
 
 
-Q7. Benefits of cluster computing ? ==SHOSH==
+Q6. Benefits of cluster computing ? ==SHOSH==
 Ans. The benefits of cluster computing are as follows : 
 * System Availability : high availability
 * Hardware Fault Tolerance : Redundancy for h/w and s/w
@@ -86,7 +82,7 @@ Ans. The benefits of cluster computing are as follows :
 <hr>
 
 
-Q8. What is cloud computing ?
+Q7. What is cloud computing ?
 Ans. It is the delivery of ==on-demand services== over the internet on a ==pay-as-you-go basis==
 * It refers to both the software application delivered as a service, as well as the hardware and system software in the data centers that provide these services
 * It is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable resources
@@ -94,7 +90,7 @@ Ans. It is the delivery of ==on-demand services== over the internet on a ==pay-a
 <hr>
 
 
-Q9. What are the key technologies in cloud computing ?
+Q8. What are the key technologies in cloud computing ?
 Ans The key technologies in cloud computing are : 
 * Virtualization Technology
 * Programming Model
@@ -104,7 +100,7 @@ Ans The key technologies in cloud computing are :
 <hr>
 
 
-Q10. What are the characteristics of Grid computing ?
+Q9. What are the characteristics of Grid computing ?
 Ans. 
 1. They share more than information
 2. Efficient use of resoures at many institutes
@@ -115,7 +111,7 @@ Ex : Physics apps, reator apps, weather forecast, detection and modelling natura
 <hr>
 
 
-Q11 What are the different types of cloud service models ?
+Q10. What are the different types of cloud service models ?
 Ans. There are 3 types of cloud service models : 
 * IaaS : 
 	* Infrastructure as a service provides processing, storage, networks and other computing resources. 
@@ -128,7 +124,6 @@ Ans. There are 3 types of cloud service models :
 	* The capability provided to the consumer is to deploy onto cloud infra using programming languages, libraries, etc.
 
 <hr>
-
 
 
 Q11. What are the different types of cloud ?
@@ -404,20 +399,29 @@ Ans Universal Description, Discover and Integration is a registry service, which
 <hr>
 
 Q. What is Open Stack ?
-Ans. Open Stack is a cloud OS , that controls large pools of computing, storage and networking resources.
+Ans. ==Open Stack== is a ==cloud OS== , that controls large pools of ==computing, storage and networking resources==.
 * It uses a dashboard to give admins control.
 * It empowers users to provision resources through a web interface.
 
 OpenStack capabilities are as follows : 
-* SaaS : Browser or thin client access
-* PaaS : On ton of IaaS ( Cloud foundry )
-* IaaS : Provision compute, network and storage
-* Network
+* **SaaS** : Browser or thin client access
+* **PaaS** : On ton of IaaS ( Cloud foundry )
+* **IaaS** : Provision compute, network and storage
+* **Network**
 * Storage for VM's
-* Multi-tenancy :
+* **Multi-tenancy** :
 	* Users can be associated with multiple projects
 	* These multiple users may need to use a single software, hence the need for multi-tenancy
 
+The key components of Open Stack architecture are : ==NNSCKGCH==
+* **Project Nova** 
+* **Project Neutron** 
+* **Project Swift** 
+* **Project Cinder** 
+* **Project Keystone** 
+* **Project Glance** 
+* **Project Ceilometer**
+* **Project Horizon**
 
 
 **![](https://lh7-us.googleusercontent.com/JUmLRUA1XeBWvIg2wc3xarB4lzMgJOV7Hwr8RUWOYnLo0snBSMhNmauYVWLYmwKf-ajkAnDz9gm1oRWadxvKd8rkW2rLIgXd8SFZ8EDpN8Cbhmi-EYp_U5WcO6h7vbCkq-OXhqxe_q_jLi2oW77vGas)**
