@@ -19,11 +19,17 @@ Ans. There are 5 types of trends in Computing :
 4. Utility Computing
 5. Cloud Computing
 
+<hr>
+
+
 Q2. What are Distributed Applications?
 Ans. 
 * Appliccations that ==consist of a set of process that are distributed acrosss a network of computers== that work as an ensemble to solve a common problem
 * Client- Server : ==Resource management is centralized to the server==
 * Peer to peer computing : It represents a movement toward ==truly distributed applications==
+
+<hr>
+
 
 
 Q3. What are the different types of grids ? ==CDCNU==
@@ -40,21 +46,34 @@ Ans. There are 5 different types of drigs
 5. Utility Grid : 
 	* Ultimate form. Data and computation cycles as well as software or any other resource is shared.
 
+<hr>
+
+
 Q4. What is Grid computing ?
 Ans. 
 * It is a form of networking.
 * Uses the processing cycles of other computers, to solve problems too intensive for a single computer.
 * It creates vast IT capabilities by combining various data resources from multiple computers on the network, such as processing, network bandwidth, and storage capacity.
 
+<hr>
+
+
 Q5. What is Cluster Computing ?
 Ans 
 * It is a type of parallel or dsitributed Computer system, where inter connected stand alone computers work together as  single computing unit.
 * Key components are : ==computers, OS's, middleware, parallel programming env, and applications.==
 
+<hr>
+
+
 Q6. What are the components of a cluster ?
- Ans. 1. Cluster nodes
+ Ans. 
+ 1. Cluster nodes
  2. Cluster Network
  3. Network Characterization
+
+<hr>
+
 
 Q7. Benefits of cluster computing ? ==SHOSH==
 Ans. The benefits of cluster computing are as follows : 
@@ -64,10 +83,16 @@ Ans. The benefits of cluster computing are as follows :
 * Scalability : Adding servers
 * High Performance : Running cluster enabled programs
 
+<hr>
+
+
 Q8. What is cloud computing ?
 Ans. It is the delivery of ==on-demand services== over the internet on a ==pay-as-you-go basis==
 * It refers to both the software application delivered as a service, as well as the hardware and system software in the data centers that provide these services
 * It is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable resources
+
+<hr>
+
 
 Q9. What are the key technologies in cloud computing ?
 Ans The key technologies in cloud computing are : 
@@ -76,13 +101,19 @@ Ans The key technologies in cloud computing are :
 * Data Management Technology
 * Data Storage Technology
 
-Q10. CHaracteristics of Grid computing ?
+<hr>
+
+
+Q10. What are the characteristics of Grid computing ?
 Ans. 
 1. They share more than information
 2. Efficient use of resoures at many institutes
 3. Join local communities, for research, etc
 4. Interactions with underneath layers must be transparent and seamless;
 Ex : Physics apps, reator apps, weather forecast, detection and modelling natural disasters, etc
+
+<hr>
+
 
 Q11 What are the different types of cloud service models ?
 Ans. There are 3 types of cloud service models : 
@@ -96,6 +127,9 @@ Ans. There are 3 types of cloud service models :
 * PaaS : 
 	* The capability provided to the consumer is to deploy onto cloud infra using programming languages, libraries, etc.
 
+<hr>
+
+
 
 Q11. What are the different types of cloud ?
 Ans There are 4 different types of cloud : 
@@ -103,6 +137,9 @@ Ans There are 4 different types of cloud :
 2. Community Cloud : Shared by multiple organizations
 3. Public Cloud : Made for the general public
 4. Hybrid Cloud : Composition of two or more clouds
+
+<hr>
+
 
 Q12. What are the various advantages of virtual machines ?
 Ans. The advantages of virtual machines are : 
@@ -113,6 +150,9 @@ Ans. The advantages of virtual machines are :
 * Run legacy systems
 * Debug problems
 
+<hr>
+
+
 Q13. Difference between Vertical scaling (up) vs Horizontal scaling (out) ?
 Ans.
 | Vertical Scaling (Up) | Horizontal Scaling (Out) |
@@ -122,8 +162,14 @@ Ans.
 |--|Database partitioning|
 |For smaller scenarios scale up is cheaper|For larger scenarios scale out is the only solution|
 
-Q14. What is XaaS?
+<hr>
+
+
+Q14. What is IaaS?
 Ans. 
+
+
+<hr>
 
 
 Q15. What is a client server architecture ?
@@ -133,6 +179,9 @@ Ans. We have a server and several clients connecting to the server. The server i
 * Client is a often thin ( mobile, laptop, etc ) with low computational capabilities
 * Server could bea  load balanced cluster or a standalone machine
 
+<hr>
+
+
 Q16. What is XaaS?
 Ans The combination of service oriented infrastructure and cc realizes XaaS
 * X as a service is generalization for cloud related services
@@ -140,6 +189,9 @@ Ans The combination of service oriented infrastructure and cc realizes XaaS
 * It refers to an increasing number of services provided over the internet than locally
 * It is the essence of CC
 Ex : SEaaS ( Security ), DaaS ( Database ), MaaS ( Management ), IaaS( Identity ), BaaS ( Backup ), BPaaS ( Business Process )
+
+<hr>
+
 
 Q17. What is SaaS ? 
 Ans Software as a service ==Characteristics==
@@ -153,14 +205,22 @@ Application of SaaS :
 * Communication of organization with outside world ( email, newsletter, campaign software, etc )
 * Need for mobile or web access ( mobile sales management software, exam software, CRM software, etc )
 
+<hr>
+
+
 Q18. What is PaaS?
 Ans. It can be defined as  a computing platform that allows the creation of web applications, without needing to maintain the s/w or h/w infrastructure underneath it.
 Characteristics of PaaS : 
 * Services to develop, test, deploy, host and maintain applications
-* Web based UI creation tools help you/
+* Web based UI creation tools help you 
+
+<hr>
+
 
 Q19. What is virtualization ?
 Ans.  Virtualization refers to the act of creatinga  virtual rather than an actual version of something, incluing a computer hardware platform, OS, storage device or network resources.
+
+<hr>
 
 
 Q20. What are the different type sof virtualization ?
@@ -181,12 +241,20 @@ Ans There are 5 different types of virtualziation.
 	* Network virt, is creation of a virtualized network addressing space within or accross network subnets.
 	* VPN
 
-Q21 What are the 3 types of server firtualization ?
+<hr>
+
+Q21 What are the 3 types of server virtualization ?
 Ans. The 3 types are : 
 * Full virt
-	* 
-* Para Virt
+	* Uses a special software : Hypervisor
+	* It interacts directly with the physical servers CPU and disk space
+	* Keeps each virtual server completely independent of the other virtual servers
+* Para Virt : 
+	* Unlike full virt, guests systems are aware of each other.
+	* The hypervisor herer doesn't need as much processing power to manage the guest OS's
 * OS-level virt
+	* Doesn't use a hypervisor at all, the virtualization capability is part of the Host OS.
+	* All the Guest OS's must be the same
 * They all share a few common traits
 	* The physical server is the host
 	* The virtual servers are guests
@@ -295,4 +363,37 @@ It is a service provisioning model in which a service provider makes computing r
 ### Cloud Service Models
 **![](https://lh7-us.googleusercontent.com/E3Adbh1MOLwuOWVoRXj63VBJhlvOJ2B6RSLtFUgpWjUUdSnqk_w_1ThltCfqtvZlsBa_SxL9MQxcEjMeRmvqLlGI9UOI_YbW1LVvAdAiZDz2YWzMcASlI4hfFSPFS-dss-FlHH3d468OpFtin5wpogc)**
 
+<hr>
+
+
+Q. What is UDDI ? 
+Ans Universal Description, Discover and Integration is a registry service, which contains metadata information.
+* It is a framework used to define XML based registries
+* Registries -> Repos -> Documents -> Business data
+* Business publish info about the services they offer and about themselves
+* There are 3 components :
+	* Service Registry : Gives support for publishing and Locating services
+	* Service Provider : Provides e-business services
+	* Service Requestor : Finds required services via the service broker
+
+**![](https://lh7-us.googleusercontent.com/tYSpq1wl2u2zNol8YMFR24mtYZ7NiBzL0JKJw-uFXDZe_pxOi7p7WKKmMcBxNShBuX9v6zf5sVf8RAq7yzAABbCFsf9KTIrBlxx714WVsMeMkAe8IO0uFI-Y7FbplQ8mm2JVmFLpOz5U9hbFLTb68mk)**
+
+<hr>
+
+
+Q. What is WSDL and what is the WSDL Document structure ?
+Ans. Web Service Description Language is the XML vocab standard for defining web services and their capabilities
+* Specifies what a request message must contain, and what a response message must look like
+* Defines where the service is available and what comm protocol is used to talk to the service.
+
+WSDL Document Structure : 
+It is just a simple XML document : 
+* **Port Type** : The operations performed by the web service.
+* **Message** : The messages used by the web service
+* **Types** : The data types used by the web service
+* **Binding** : The comm protocols used by the web service
+
+Q What is SOAP ? What are it's building blocks ?
+Ans. Simple Object Access Protocol is basically a format for sending messages over the internet, b/w programs.
+* It is XML based, and platform independent
 
