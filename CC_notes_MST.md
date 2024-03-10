@@ -260,7 +260,137 @@ Ans. The 3 types are :
 	* The virtual servers are guests
 	* These virt servers behave like physical machines
 
+Q. What is XML ? 
+Ans. 
+* XML is a markup language used to provide information about a document
+* Tags are used to give extra info
+* HTML tags tell the browser how to display the doc
+* XML tags give the reader an idea of what the data means
+* It is basically a meta language that allows you to create and format your own tags
+* It allows you to put structured data into a file which is :
+	* Unambiguous
+	* Extensible
+	* Platform Independent
+	* Easy to Read
+* They are used to transfer data from one place to another on the internet
 
+
+
+<hr>
+
+Q. What is XML DOM ?
+Ans. It is : 
+* A standard Object Model for XML
+* A strandard programming Interface for XML
+* It is platform and language independent
+* It ==defines== the ==objects and properties== of all ==XML elements==, and the methods ( interface ) to access them.
+* The ==XML DOM== is a standard for how to ==get, change, add or delete== ==XML elements==. 
+
+Advantages : 
+* It is platform and language independent
+* It is traversible
+* It is modifiable
+
+Disadvantages : 
+* It consumes more memory if the document structure is large/
+* The size affects the operational speed
+
+<hr>
+
+Q.What is JDOM ?
+Ans. JDOM or Java Document Object Model is a way to represent an XML document for easy and efficient reading, manipulation and writing.
+* Straighforward API
+* Lightweight and fast
+* Java-optimized
+
+Isn't built on DOM or modeled after DOM
+It is an opern source project with Apache-style license
+<hr>
+
+
+Q. What are Web Services ?
+Ans. Web services are an XML based phenomena
+* They are those services which can be defined and accessed through a standard URI ==( Uniform Resource Identifier )== 
+* Works on message exchange protocol which is based on XML
+* Take advantage of OOP. Allow developers to build apps from existing software components.
+* Communicate via open protocols ( ==HTTP, SMTP==)
+* Describes it's messages using XML schema.
+* Provide capabilities similar to EDI and are cheaper to implement
+
+XML
+* XML is a data transformation language
+* It allows for interoperability and helps in applications talking to each other.
+
+<hr>
+
+Q. What is EDI?
+Ans. EDI or ==Electronic Data Interchange== : 
+* It is a computer to ==computer exchange of business data and documents== b/w companies, using standardized formats.
+* ==Business data== comprises of all the information related to a company, such as ==sales data==, ==customer contact info== and ==website traffic stats==.
+
+An example of business data would be :
+When you visit a website. what you look at, what colors you prefer and even how long you stay on the website, is captured.
+
+
+<hr>
+
+Q What is Service Oriented Architecture ?
+Ans. IBM made a model to show ==web services interaction==, which consists of relationships between ==3 entities==  :
+* **Service Registry/Broker** : Gives support for publishing and Locating services
+* **Service Provider** : Provides e-business services or web services
+* **Service Requestor** : Finds required services via the service broker
+
+==SOA== is also a generic model describing ==service collaboration==, not specific to web services 
+
+Operations in web service architecture / SOA : 
+* **Publish** : Service descriptions need to be published for the service requestor to find them
+* **Find** : Service requestor retrieves a service description or queries the service registry to find the required service.
+* **Bind** : Service requestor invokes or initiates an interaction with the service.
+
+
+<hr>
+
+Q. What is SOAP ? What are it's building blocks ?
+Ans. Simple Object Access Protocol is basically a ==format for sending messages over the internet, b/w programs==.
+* It is ==XML based==, and platform independent
+* Simple and extensible
+* Uses mainly ==HTTP== ( Contains SOAP message as payload )
+* Stateless and one-way
+
+Soap Building blocks are : 
+* **Envelope** : Identifies XML doc as SOAP message
+* **Header** 
+* **Body** : call and response info
+* **Fault** : errors that occur while processing message.
+
+<hr>
+
+Q. What is WSDL and what is the WSDL Document structure ?
+Ans. Web Service Description Language is the XML vocab standard for defining web services and their capabilities
+* Specifies what a request message must contain, and what a response message must look like
+* Defines where the service is available and what comm protocol is used to talk to the service.
+
+WSDL Document Structure : 
+It is just a simple XML document : 
+* **Port Type** : The operations performed by the web service.
+* **Message** : The messages used by the web service
+* **Types** : The data types used by the web service
+* **Binding** : The comm protocols used by the web service
+
+<hr>
+
+Q. What is UDDI ? 
+Ans Universal Description, Discover and Integration is a registry service, which contains metadata information.
+* It is a framework used to define XML based registries
+* Registries -> Repos -> Documents -> Business data
+* Business publish info about the services they offer and about themselves
+* **Service Registry/Broker** : Gives support for publishing and Locating services
+* **Service Provider** : Provides e-business services or web services
+* **Service Requestor** : Finds required services via the service broker
+
+**![](https://lh7-us.googleusercontent.com/tYSpq1wl2u2zNol8YMFR24mtYZ7NiBzL0JKJw-uFXDZe_pxOi7p7WKKmMcBxNShBuX9v6zf5sVf8RAq7yzAABbCFsf9KTIrBlxx714WVsMeMkAe8IO0uFI-Y7FbplQ8mm2JVmFLpOz5U9hbFLTb68mk)**
+
+<hr>
 
 
 **![](https://lh7-us.googleusercontent.com/JUmLRUA1XeBWvIg2wc3xarB4lzMgJOV7Hwr8RUWOYnLo0snBSMhNmauYVWLYmwKf-ajkAnDz9gm1oRWadxvKd8rkW2rLIgXd8SFZ8EDpN8Cbhmi-EYp_U5WcO6h7vbCkq-OXhqxe_q_jLi2oW77vGas)**
@@ -363,37 +493,9 @@ It is a service provisioning model in which a service provider makes computing r
 ### Cloud Service Models
 **![](https://lh7-us.googleusercontent.com/E3Adbh1MOLwuOWVoRXj63VBJhlvOJ2B6RSLtFUgpWjUUdSnqk_w_1ThltCfqtvZlsBa_SxL9MQxcEjMeRmvqLlGI9UOI_YbW1LVvAdAiZDz2YWzMcASlI4hfFSPFS-dss-FlHH3d468OpFtin5wpogc)**
 
-<hr>
 
 
-Q. What is UDDI ? 
-Ans Universal Description, Discover and Integration is a registry service, which contains metadata information.
-* It is a framework used to define XML based registries
-* Registries -> Repos -> Documents -> Business data
-* Business publish info about the services they offer and about themselves
-* There are 3 components :
-	* Service Registry : Gives support for publishing and Locating services
-	* Service Provider : Provides e-business services
-	* Service Requestor : Finds required services via the service broker
-
-**![](https://lh7-us.googleusercontent.com/tYSpq1wl2u2zNol8YMFR24mtYZ7NiBzL0JKJw-uFXDZe_pxOi7p7WKKmMcBxNShBuX9v6zf5sVf8RAq7yzAABbCFsf9KTIrBlxx714WVsMeMkAe8IO0uFI-Y7FbplQ8mm2JVmFLpOz5U9hbFLTb68mk)**
-
-<hr>
 
 
-Q. What is WSDL and what is the WSDL Document structure ?
-Ans. Web Service Description Language is the XML vocab standard for defining web services and their capabilities
-* Specifies what a request message must contain, and what a response message must look like
-* Defines where the service is available and what comm protocol is used to talk to the service.
 
-WSDL Document Structure : 
-It is just a simple XML document : 
-* **Port Type** : The operations performed by the web service.
-* **Message** : The messages used by the web service
-* **Types** : The data types used by the web service
-* **Binding** : The comm protocols used by the web service
-
-Q What is SOAP ? What are it's building blocks ?
-Ans. Simple Object Access Protocol is basically a format for sending messages over the internet, b/w programs.
-* It is XML based, and platform independent
 
