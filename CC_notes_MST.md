@@ -90,7 +90,7 @@ Ans. It is the delivery of ==on-demand services== over the internet on a ==pay-a
 <hr>
 
 
-Q8. What are the key technologies in cloud computing ?
+Q8. What are the key technologies in cloud computing ? ==VPDD==
 Ans The key technologies in cloud computing are : 
 * Virtualization Technology
 * Programming Model
@@ -161,8 +161,19 @@ Ans.
 
 
 Q14. What is IaaS?
-Ans. 
+Ans. It is a way of deliving cloud computing infra - servers, networks, storage, OS's - as an on-demand service.
 
+IaaS characteristics : 
+* Resources are distributed as a service
+* Allows for dynamic scaling
+* Has variable cost
+* Includes multiple users on a  single piece of hardware
+
+Applications of IaaS : 
+* Where demand is volatile
+* For new organizations
+* Rapidly growing organizations
+* Specific line of business
 
 <hr>
 
@@ -172,7 +183,7 @@ Ans. We have a server and several clients connecting to the server. The server i
 * Consists of one or more load balanced servers servicing requests sent by clients
 * Exchange of messages in ==request-response== fashion
 * Client is a often thin ( mobile, laptop, etc ) with low computational capabilities
-* Server could bea  load balanced cluster or a standalone machine
+* Server could be a load balanced cluster or a standalone machine
 
 <hr>
 
@@ -207,13 +218,21 @@ Q18. What is PaaS?
 Ans. It can be defined as  a computing platform that allows the creation of web applications, without needing to maintain the s/w or h/w infrastructure underneath it.
 Characteristics of PaaS : 
 * Services to develop, test, deploy, host and maintain applications
-* Web based UI creation tools help you 
+* Web based UI creation tools help you create, modify, test and deploy different UI's
+* Multi tenant architecture where multiple users are using the same application
+* Built in scalability
+* Integration with web services
+
+Applications of PaaS : 
+* Useful when multiples devs are working on a  single project
+* When devs wish to automate testing
+
 
 <hr>
 
 
 Q19. What is virtualization ?
-Ans.  Virtualization refers to the act of creatinga  virtual rather than an actual version of something, incluing a computer hardware platform, OS, storage device or network resources.
+Ans.  Virtualization refers to the act of creating a virtual (rather than an actual ) version of something, incluing a computer hardware platform, OS, storage device or network resources.
 
 <hr>
 
@@ -238,7 +257,7 @@ Ans There are 5 different types of virtualziation.
 
 <hr>
 
-Q21 What are the 3 types of server virtualization ?
+Q21.  What are the 3 types of server virtualization ?
 Ans. The 3 types are : 
 * Full virt
 	* Uses a special software : Hypervisor
@@ -246,7 +265,7 @@ Ans. The 3 types are :
 	* Keeps each virtual server completely independent of the other virtual servers
 * Para Virt : 
 	* Unlike full virt, guests systems are aware of each other.
-	* The hypervisor herer doesn't need as much processing power to manage the guest OS's
+	* The hypervisor here doesn't need as much processing power to manage the guest OS's
 * OS-level virt
 	* Doesn't use a hypervisor at all, the virtualization capability is part of the Host OS.
 	* All the Guest OS's must be the same
@@ -274,7 +293,17 @@ Ans.
 <hr>
 
 Q23. What are the advantages of XML ?
-Ans.
+Ans. The advantages are : 
+* It is unicode / takes up less space
+* One XML doc can be displayed differently on different media
+* XML documents can be modularized
+* Portable Data
+* Easy to read
+* Extensible
+* Platform independent
+* Flexible and customizables
+* Easy to convert
+* Widely used and supported
 
 <hr>
 
@@ -406,7 +435,7 @@ Ans. ==Open Stack== is a ==cloud OS== , that controls large pools of ==computing
 
 OpenStack capabilities are as follows : 
 * **SaaS** : Browser or thin client access
-* **PaaS** : On ton of IaaS ( Cloud foundry )
+* **PaaS** : On top of IaaS ( Cloud foundry )
 * **IaaS** : Provision compute, network and storage
 * **Network**
 * Storage for VM's
