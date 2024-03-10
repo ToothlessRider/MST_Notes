@@ -260,6 +260,8 @@ Ans. The 3 types are :
 	* The virtual servers are guests
 	* These virt servers behave like physical machines
 
+<hr>
+
 Q. What is XML ? 
 Ans. 
 * XML is a markup language used to provide information about a document
@@ -274,7 +276,16 @@ Ans.
 	* Easy to Read
 * They are used to transfer data from one place to another on the internet
 
+<hr>
 
+Q. What are the advantages of XML ?
+Ans.
+
+<hr>
+
+Q. What are the differences between HTML and XML ?
+Ans. 
+**![](https://lh7-us.googleusercontent.com/yNlOt4sPeEIhId_DuWKJs1h8fjeEUwRaIA8Eyha0F7kjCiX633mtD_AWZCbofPtwXorYM3rDjg-fPLOxESza2xE9uyn-yVlTofe4ifTVXGIbj-0f8Mddd6vVvNsZZksardpDwTBtmCjLWvH9bgavi5I)**
 
 <hr>
 
@@ -391,6 +402,22 @@ Ans Universal Description, Discover and Integration is a registry service, which
 **![](https://lh7-us.googleusercontent.com/tYSpq1wl2u2zNol8YMFR24mtYZ7NiBzL0JKJw-uFXDZe_pxOi7p7WKKmMcBxNShBuX9v6zf5sVf8RAq7yzAABbCFsf9KTIrBlxx714WVsMeMkAe8IO0uFI-Y7FbplQ8mm2JVmFLpOz5U9hbFLTb68mk)**
 
 <hr>
+
+Q. What is Open Stack ?
+Ans. Open Stack is a cloud OS , that controls large pools of computing, storage and networking resources.
+* It uses a dashboard to give admins control.
+* It empowers users to provision resources through a web interface.
+
+OpenStack capabilities are as follows : 
+* SaaS : Browser or thin client access
+* PaaS : On ton of IaaS ( Cloud foundry )
+* IaaS : Provision compute, network and storage
+* Network
+* Storage for VM's
+* Multi-tenancy :
+	* Users can be associated with multiple projects
+	* These multiple users may need to use a single software, hence the need for multi-tenancy
+
 
 
 **![](https://lh7-us.googleusercontent.com/JUmLRUA1XeBWvIg2wc3xarB4lzMgJOV7Hwr8RUWOYnLo0snBSMhNmauYVWLYmwKf-ajkAnDz9gm1oRWadxvKd8rkW2rLIgXd8SFZ8EDpN8Cbhmi-EYp_U5WcO6h7vbCkq-OXhqxe_q_jLi2oW77vGas)**
