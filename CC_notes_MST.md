@@ -111,7 +111,7 @@ Ex : Physics apps, reator apps, weather forecast, detection and modelling natura
 <hr>
 
 
-Q10. What are the different types of cloud service models ?
+Q10. What are the different types of cloud service/delivery models ?
 Ans. There are 3 types of cloud service models : 
 * IaaS : 
 	* Infrastructure as a service provides processing, storage, networks and other computing resources. 
@@ -126,12 +126,12 @@ Ans. There are 3 types of cloud service models :
 <hr>
 
 
-Q11. What are the different types of cloud ?
+Q11. What are the different types of cloud deployment models ?
 Ans There are 4 different types of cloud : 
-1. Private Cloud : Solely for an organization
-2. Community Cloud : Shared by multiple organizations
-3. Public Cloud : Made for the general public
-4. Hybrid Cloud : Composition of two or more clouds
+1. **Private Cloud** : Solely for an organization
+2. **Community Cloud** : Shared by multiple organizations
+3. **Public Cloud** : Made for the general public
+4. **Hybrid Cloud** : Composition of two or more clouds
 
 <hr>
 
@@ -257,7 +257,7 @@ Ans. The 3 types are :
 
 <hr>
 
-Q. What is XML ? 
+Q22. What is XML ? 
 Ans. 
 * XML is a markup language used to provide information about a document
 * Tags are used to give extra info
@@ -273,18 +273,18 @@ Ans.
 
 <hr>
 
-Q. What are the advantages of XML ?
+Q23. What are the advantages of XML ?
 Ans.
 
 <hr>
 
-Q. What are the differences between HTML and XML ?
+Q24. What are the differences between HTML and XML ?
 Ans. 
 **![](https://lh7-us.googleusercontent.com/yNlOt4sPeEIhId_DuWKJs1h8fjeEUwRaIA8Eyha0F7kjCiX633mtD_AWZCbofPtwXorYM3rDjg-fPLOxESza2xE9uyn-yVlTofe4ifTVXGIbj-0f8Mddd6vVvNsZZksardpDwTBtmCjLWvH9bgavi5I)**
 
 <hr>
 
-Q. What is XML DOM ?
+Q25. What is XML DOM ?
 Ans. It is : 
 * A standard Object Model for XML
 * A strandard programming Interface for XML
@@ -303,7 +303,7 @@ Disadvantages :
 
 <hr>
 
-Q.What is JDOM ?
+Q26.What is JDOM ?
 Ans. JDOM or Java Document Object Model is a way to represent an XML document for easy and efficient reading, manipulation and writing.
 * Straighforward API
 * Lightweight and fast
@@ -311,10 +311,11 @@ Ans. JDOM or Java Document Object Model is a way to represent an XML document fo
 
 Isn't built on DOM or modeled after DOM
 It is an opern source project with Apache-style license
+
 <hr>
 
 
-Q. What are Web Services ?
+Q27. What are Web Services ?
 Ans. Web services are an XML based phenomena
 * They are those services which can be defined and accessed through a standard URI ==( Uniform Resource Identifier )== 
 * Works on message exchange protocol which is based on XML
@@ -329,7 +330,7 @@ XML
 
 <hr>
 
-Q. What is EDI?
+Q28. What is EDI?
 Ans. EDI or ==Electronic Data Interchange== : 
 * It is a computer to ==computer exchange of business data and documents== b/w companies, using standardized formats.
 * ==Business data== comprises of all the information related to a company, such as ==sales data==, ==customer contact info== and ==website traffic stats==.
@@ -340,7 +341,7 @@ When you visit a website. what you look at, what colors you prefer and even how 
 
 <hr>
 
-Q What is Service Oriented Architecture ?
+Q29. What is Service Oriented Architecture ?
 Ans. IBM made a model to show ==web services interaction==, which consists of relationships between ==3 entities==  :
 * **Service Registry/Broker** : Gives support for publishing and Locating services
 * **Service Provider** : Provides e-business services or web services
@@ -356,7 +357,7 @@ Operations in web service architecture / SOA :
 
 <hr>
 
-Q. What is SOAP ? What are it's building blocks ?
+Q30. What is SOAP ? What are it's building blocks ?
 Ans. Simple Object Access Protocol is basically a ==format for sending messages over the internet, b/w programs==.
 * It is ==XML based==, and platform independent
 * Simple and extensible
@@ -371,7 +372,7 @@ Soap Building blocks are :
 
 <hr>
 
-Q. What is WSDL and what is the WSDL Document structure ?
+Q31. What is WSDL and what is the WSDL Document structure ?
 Ans. Web Service Description Language is the XML vocab standard for defining web services and their capabilities
 * Specifies what a request message must contain, and what a response message must look like
 * Defines where the service is available and what comm protocol is used to talk to the service.
@@ -385,7 +386,7 @@ It is just a simple XML document :
 
 <hr>
 
-Q. What is UDDI ? 
+Q32. What is UDDI ? 
 Ans Universal Description, Discover and Integration is a registry service, which contains metadata information.
 * It is a framework used to define XML based registries
 * Registries -> Repos -> Documents -> Business data
@@ -398,7 +399,7 @@ Ans Universal Description, Discover and Integration is a registry service, which
 
 <hr>
 
-Q. What is Open Stack ?
+Q33. What is Open Stack ?
 Ans. ==Open Stack== is a ==cloud OS== , that controls large pools of ==computing, storage and networking resources==.
 * It uses a dashboard to give admins control.
 * It empowers users to provision resources through a web interface.
@@ -423,8 +424,31 @@ The key components of Open Stack architecture are : ==NNSCKGCH==
 * **Project Ceilometer**
 * **Project Horizon**
 
+<hr>
+
+Q34. What are the 7 steps for migration i nto the cloud ?
+Ans The 7 steps for migration into the cloud are : 
+* **Assessment and planning** :
+	* Evaluate current infra, application and data
+	* Identify if it's suitable for migration to the cloud
+* **Choose a service model** : 
+	* Base on requirement select IaaS, SaaS, PaaS
+* **Select a cloud provider** : 
+	* Any cloud provider like AWS, GCS, Azure, etc
+* **Data Migration** : 
+	* Transfer existing data to cloud usin bulk transfer
+* **Application Migration** : 
+	* Migrate apps to new cloud and make necessary adjustments
+* **Testing** : 
+	* Conduct thorough testing to validate performance
+* **Optimization and Maintenance** : 
+	* Optimize cloud resources to make it cost effective and run maintenance.
+
+
+
 
 **![](https://lh7-us.googleusercontent.com/JUmLRUA1XeBWvIg2wc3xarB4lzMgJOV7Hwr8RUWOYnLo0snBSMhNmauYVWLYmwKf-ajkAnDz9gm1oRWadxvKd8rkW2rLIgXd8SFZ8EDpN8Cbhmi-EYp_U5WcO6h7vbCkq-OXhqxe_q_jLi2oW77vGas)**
+
 
 ## Distributed Computing
 Use of distributed systems to solve computational problems.
