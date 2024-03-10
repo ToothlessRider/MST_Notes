@@ -133,7 +133,66 @@ Ans. We have a server and several clients connecting to the server. The server i
 * Client is a often thin ( mobile, laptop, etc ) with low computational capabilities
 * Server could bea  load balanced cluster or a standalone machine
 
-Q16.
+Q16. What is XaaS?
+Ans The combination of service oriented infrastructure and cc realizes XaaS
+* X as a service is generalization for cloud related services
+* XaaS stands for "everything as a service"
+* It refers to an increasing number of services provided over the internet than locally
+* It is the essence of CC
+Ex : SEaaS ( Security ), DaaS ( Database ), MaaS ( Management ), IaaS( Identity ), BaaS ( Backup ), BPaaS ( Business Process )
+
+Q17. What is SaaS ? 
+Ans Software as a service ==Characteristics==
+* Web access to commercial software
+* Software that is deployed on cloud infrastructure is made available to customers
+* Users don't have to handle software upgrades
+* API's allow the integration of various pieces of software
+* Software is in a one-to-many model
+
+Application of SaaS : 
+* Communication of organization with outside world ( email, newsletter, campaign software, etc )
+* Need for mobile or web access ( mobile sales management software, exam software, CRM software, etc )
+
+Q18. What is PaaS?
+Ans. It can be defined as  a computing platform that allows the creation of web applications, without needing to maintain the s/w or h/w infrastructure underneath it.
+Characteristics of PaaS : 
+* Services to develop, test, deploy, host and maintain applications
+* Web based UI creation tools help you/
+
+Q19. What is virtualization ?
+Ans.  Virtualization refers to the act of creatinga  virtual rather than an actual version of something, incluing a computer hardware platform, OS, storage device or network resources.
+
+
+Q20. What are the different type sof virtualization ?
+Ans There are 5 different types of virtualziation.
+* Software : 
+	* This includes OS level virt, Application Virt, Service Virt
+* Memory : 
+	* Memory virtualization , aggregating ram from different pc's to a single memory pool
+	* Virtual memory, giving an application the impression that it has contiguous working meory
+* Storage : 
+	* Storage virt, is abstracting logical memory from physical memory
+	* Distributed file system
+	* Virtual File system
+	* Virtual disk drive
+* Data : 
+	* Data Virt, the presentation of data as an abstract layer
+* Network : 
+	* Network virt, is creation of a virtualized network addressing space within or accross network subnets.
+	* VPN
+
+Q21 What are the 3 types of server firtualization ?
+Ans. The 3 types are : 
+* Full virt
+	* 
+* Para Virt
+* OS-level virt
+* They all share a few common traits
+	* The physical server is the host
+	* The virtual servers are guests
+	* These virt servers behave like physical machines
+
+
 
 
 **![](https://lh7-us.googleusercontent.com/JUmLRUA1XeBWvIg2wc3xarB4lzMgJOV7Hwr8RUWOYnLo0snBSMhNmauYVWLYmwKf-ajkAnDz9gm1oRWadxvKd8rkW2rLIgXd8SFZ8EDpN8Cbhmi-EYp_U5WcO6h7vbCkq-OXhqxe_q_jLi2oW77vGas)**
@@ -233,7 +292,7 @@ It is a service provisioning model in which a service provider makes computing r
 * Resource Pooling
 	* The providers computing resources are pooled to serve multiple consumers, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand.
 
-### Cloud Characteristics
-* Measured Service
+### Cloud Service Models
+**![](https://lh7-us.googleusercontent.com/E3Adbh1MOLwuOWVoRXj63VBJhlvOJ2B6RSLtFUgpWjUUdSnqk_w_1ThltCfqtvZlsBa_SxL9MQxcEjMeRmvqLlGI9UOI_YbW1LVvAdAiZDz2YWzMcASlI4hfFSPFS-dss-FlHH3d468OpFtin5wpogc)**
 
 
