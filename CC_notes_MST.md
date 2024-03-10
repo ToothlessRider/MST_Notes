@@ -64,7 +64,76 @@ Ans. The benefits of cluster computing are as follows :
 * Scalability : Adding servers
 * High Performance : Running cluster enabled programs
 
-Q8.
+Q8. What is cloud computing ?
+Ans. It is the delivery of ==on-demand services== over the internet on a ==pay-as-you-go basis==
+* It refers to both the software application delivered as a service, as well as the hardware and system software in the data centers that provide these services
+* It is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable resources
+
+Q9. What are the key technologies in cloud computing ?
+Ans The key technologies in cloud computing are : 
+* Virtualization Technology
+* Programming Model
+* Data Management Technology
+* Data Storage Technology
+
+Q10. CHaracteristics of Grid computing ?
+Ans. 
+1. They share more than information
+2. Efficient use of resoures at many institutes
+3. Join local communities, for research, etc
+4. Interactions with underneath layers must be transparent and seamless;
+Ex : Physics apps, reator apps, weather forecast, detection and modelling natural disasters, etc
+
+Q11 What are the different types of cloud service models ?
+Ans. There are 3 types of cloud service models : 
+* IaaS : 
+	* Infrastructure as a service provides processing, storage, networks and other computing resources. 
+	* The customer can deploy and run arbitary software
+* SaaS : 
+	* The customer is able to use applications running on the cloud infrastructure.
+	* These applications are accessible through web browsers, etc
+	* Ex : Google spreadsheet ( data is stored on the cloud and not your local device )
+* PaaS : 
+	* The capability provided to the consumer is to deploy onto cloud infra using programming languages, libraries, etc.
+
+
+Q11. What are the different types of cloud ?
+Ans There are 4 different types of cloud : 
+1. Private Cloud : Solely for an organization
+2. Community Cloud : Shared by multiple organizations
+3. Public Cloud : Made for the general public
+4. Hybrid Cloud : Composition of two or more clouds
+
+Q12. What are the various advantages of virtual machines ?
+Ans. The advantages of virtual machines are : 
+* Run OS's where hardware is unavailable
+* Easier to create new machines
+* Software tesitng can be done
+* Emulate more machines than physically available
+* Run legacy systems
+* Debug problems
+
+Q13. Difference between Vertical scaling (up) vs Horizontal scaling (out) ?
+Ans.
+| Vertical Scaling (Up) | Horizontal Scaling (Out) |
+|--|--|
+|Add more resources to a computation unit | Adding more computational units |
+|Move workload to a computation unit with more resources | Splitting workload across multiple computation units |
+|--|Database partitioning|
+|For smaller scenarios scale up is cheaper|For larger scenarios scale out is the only solution|
+
+Q14. What is XaaS?
+Ans. 
+
+
+Q15. What is a client server architecture ?
+Ans. We have a server and several clients connecting to the server. The server is continually listening on a port. If a client needs the server, it hooks into the port and gets the service.
+* Consists of one or more load balanced servers servicing requests sent by clients
+* Exchange of messages in ==request-response== fashion
+* Client is a often thin ( mobile, laptop, etc ) with low computational capabilities
+* Server could bea  load balanced cluster or a standalone machine
+
+Q16.
 
 
 **![](https://lh7-us.googleusercontent.com/JUmLRUA1XeBWvIg2wc3xarB4lzMgJOV7Hwr8RUWOYnLo0snBSMhNmauYVWLYmwKf-ajkAnDz9gm1oRWadxvKd8rkW2rLIgXd8SFZ8EDpN8Cbhmi-EYp_U5WcO6h7vbCkq-OXhqxe_q_jLi2oW77vGas)**
