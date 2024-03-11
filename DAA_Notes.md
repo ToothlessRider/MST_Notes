@@ -17,6 +17,7 @@
 |Binary Search | O(1) | O(logn) | O(logn) |
 
 <hr>
+<br>
 
 > [Additional Reference : GFG Sorting Techniques](https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/)
 
@@ -72,8 +73,10 @@ Steps to follow :
 
 ## Binary Search 
 *Best Case* : Here the best case would be if the element to be found is the middle element [ O(1) ]
-*Average Case* : O(log~2~n)
-*Worst Case* : Element to be found is on either extremes[ O(log~2~n) ] 
+*Average Case* : O(log<sub>2</sub>n)
+
+*Worst Case* : Element to be found is on either extremes[ O(log<sub>2</sub>n)
+] 
 
 > Since it is **Binary** search, the base of the log will be 2
 
@@ -211,7 +214,7 @@ public class selection_sort {
 
 <br><br>
 
-## Selection Sort ~Recursive~
+## Selection Sort <sub>Recursive</sub>
 *Best Case* : O(n<sup>2</sup>)
 *Average Case* : O(n<sup>2</sup>)
 *Worst Case* : O(n<sup>2</sup>)
@@ -336,7 +339,7 @@ There are two types of Data Structures :
 * Linear Data Structures ( *elements are accessed in a sequential order*)
 * Non-Linear Data Structures (*elements are stored/accessed in a non-linear order*)
 
-## Abstract Data Types ~ADT's~
+## Abstract Data Types <sub>ADT's</sub>
 When we combine the user defined data structures with their operations they are known as 'Abstract Data Types', and they consist of two parts : 
 * Declaration of Data
 * Declaration of Operations
