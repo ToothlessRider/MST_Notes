@@ -9,9 +9,9 @@
 
 | Algorithm | Best | Average | Worst | Auxillary Space |
 |--|--|--|--|--|
-|Selection Sort|O(n^2^) | O(n^2^) | O(n^2^)| O(1) | O(1) |
-|Insertion Sort & Bubble Sort | O(n) | O(n^2^)|O(n^2^)| O(1) or O(n) for worst case |
-|Quick Sort | O(nlogn) | O(nlogn) | O(n^2^) | O(logn) or O(n) for worst case|
+|Selection Sort|O(n<sup>2</sup>) | O(n<sup>2</sup>) | O(n<sup>2</sup>)| O(1) |
+|Insertion Sort & Bubble Sort | O(n) | O(n<sup>2</sup>)|O(n<sup>2</sup>)| O(1) or O(n) for worst case |
+|Quick Sort | O(nlogn) | O(nlogn) | O(n<sup>2</sup>) | O(logn) or O(n) for worst case|
 |Merge Sort | O(nlogn) | O(nlogn) | O(nlogn) | O(n) |
 |Unsorted Case| O(1) | O(n) | O(n) |
 |Binary Search | O(1) | O(logn) | O(logn) |
@@ -425,8 +425,3 @@ A stack is a simple data structure used for storing data. In this the order that
 **![](https://lh7-us.googleusercontent.com/eB8AtQSRUY1d89s7QtMfoSSsiVcKzPgAbnwL6hhH5-EJyjPV77aE7FMjnH1QGBbiJluc-malu0khGY975dkPQyWkYZgZTEJwpv1m9Yk_DB32auUOUPxUCTVRtz38hemQMRklcb4frrTUsXEKywRM89Q)**
 
 
-
-# Searching and Sorting 
-
-> [Reference : Sorting based mcqs](https://www.sanfoundry.com/sorting-multiple-choice-questions-mcq/)
-> 
