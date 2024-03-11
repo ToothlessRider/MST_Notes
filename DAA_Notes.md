@@ -126,9 +126,9 @@ Therefore if we unwind the recurrence
 <br><br>
 
 ## Selection Sort 
-*Best Case* : O(n^2^) 
-*Average Case* : O(n^2^) 
-*Worst Case* : O(n^2^) 
+*Best Case* : O(n<sup>2</sup>)
+*Average Case* : O(n<sup>2</sup>)
+*Worst Case* : O(n<sup>2</sup>)
 
 > The idea here is to move the item into it's correct place in the final sorted list ( Not to use another extra array ).
 > * It basically iterates through the array.
@@ -205,16 +205,16 @@ public class selection_sort {
 ```
 
 
-> Time complexity : O(n^2^)
+> Time complexity : O(n<sup>2</sup>)
 > Finding minimum in unsorted segment of length k requires one scan, k steps
-> T(n) = n + (n-1) + (n-2) + ..... + 1 = n(n+1)/2 = O(n^2^)
+> T(n) = n + (n-1) + (n-2) + ..... + 1 = n(n+1)/2 = O(n<sup>2</sup>)
 
 <br><br>
 
 ## Selection Sort ~Recursive~
-*Best Case* : O(n^2^) 
-*Average Case* : O(n^2^) 
-*Worst Case* : O(n^2^) 
+*Best Case* : O(n<sup>2</sup>)
+*Average Case* : O(n<sup>2</sup>)
+*Worst Case* : O(n<sup>2</sup>)
 
 #### *Algorithm*
 ```
@@ -264,9 +264,9 @@ print("Sorted array:", array)
 
 
 ## Insertion Sort 
-*Best Case* : O(n^2^) 
-*Average Case* : O(n^2^) 
-*Worst Case* : O(n^2^) 
+*Best Case* : O(n<sup>2</sup>)
+*Average Case* : O(n<sup>2</sup>)
+*Worst Case* : O(n<sup>2</sup>)
 
 > We start by building a sorted sequence with one element
 > Then we pick up the next unsorted element and insert it into it's correct place in the already sorted sequence
