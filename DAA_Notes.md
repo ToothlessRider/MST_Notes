@@ -271,7 +271,8 @@ T(n) = 1 + 1 + … + 1 + T(n/2<sup>logn</sup>) = O(logn)</p>
 
 </code></pre>
 <h4 id="java-code"><em>Java Code</em></h4>
-<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<pre class=" language-java"><code class="prism  language-java">
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Scanner<span class="token punctuation">;</span>
 
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">selection_sort</span> <span class="token punctuation">{</span>
