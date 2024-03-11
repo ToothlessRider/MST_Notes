@@ -3,23 +3,24 @@
 
 > Star the gist so that I can get a consensus on how many people are using this resource
 
-# Sorting Algorithms
+# Searching & Sorting Algorithms
 
 > Cheat sheet for algorithm Time Complexity 
 
-| Algorithm | Best | Average | Worst |
-|--|--|--|--|
-| Binary Search | O(1) | O(logn) | O(logn) |
-|Selection Sort|O(N^2^) | O(N^2^) | O(N^2^)|
-| Quick Sort | O(nlogn) | O(nlogn) | O(N^2^) |
-|Merge Sort | O(nlogn) | O(nlogn) | O(nlogn) |
-|Insertion Sort & Bubble Sort | O(n) | O(N^2^)|O(N^2^)|
+| Algorithm | Best | Average | Worst | Auxillary Space |
+|--|--|--|--|--|
+|Selection Sort|O(n^2^) | O(n^2^) | O(n^2^)| O(1) | O(1) |
+|Insertion Sort & Bubble Sort | O(n) | O(n^2^)|O(n^2^)| O(1) or O(n) for worst case |
+|Quick Sort | O(nlogn) | O(nlogn) | O(n^2^) | O(logn) or O(n) for worst case|
+|Merge Sort | O(nlogn) | O(nlogn) | O(nlogn) | O(n) |
 |Unsorted Case| O(1) | O(n) | O(n) |
+|Binary Search | O(1) | O(logn) | O(logn) |
 
 <hr>
 
 > [Additional Reference : GFG Sorting Techniques](https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/)
 
+<br><br>
 
 ## Unsorted Case  
 
@@ -67,10 +68,12 @@ Steps to follow :
 * If K < midpoint, search left half of the array
 * If K > midpoint, search right half of the array
 
+<br><br>
+
 ## Binary Search 
-*Best Case* : Here the best case would be if the element to be found is the middle element [ O(1)]
+*Best Case* : Here the best case would be if the element to be found is the middle element [ O(1) ]
 *Average Case* : O(log~2~n)
-*Worst Case* : Element to be found is the last element [ O(log~2~n) ] 
+*Worst Case* : Element to be found is on either extremes[ O(log~2~n) ] 
 
 > Since it is **Binary** search, the base of the log will be 2
 
@@ -120,8 +123,17 @@ Therefore if we unwind the recurrence
 
 **Binary search works only for arrays**
 
+<br><br>
+
 ## Selection Sort 
-The idea here is to move the item into it's correct place in the final sorted list ( Not to use another extra array )
+*Best Case* : O(n^2^) 
+*Average Case* : O(n^2^) 
+*Worst Case* : O(n^2^) 
+
+> The idea here is to move the item into it's correct place in the final sorted list ( Not to use another extra array ).
+> * It basically iterates through the array.
+> * Compares each element to the current element.
+>  * Looks to swap if the compared element is smaller.
 
 #### *Algorithm*
 ```
@@ -197,7 +209,12 @@ public class selection_sort {
 > Finding minimum in unsorted segment of length k requires one scan, k steps
 > T(n) = n + (n-1) + (n-2) + ..... + 1 = n(n+1)/2 = O(n^2^)
 
+<br><br>
+
 ## Selection Sort ~Recursive~
+*Best Case* : O(n^2^) 
+*Average Case* : O(n^2^) 
+*Worst Case* : O(n^2^) 
 
 #### *Algorithm*
 ```
@@ -243,14 +260,32 @@ selection_sort_recursive(array, 0, len(array))
 print("Sorted array:", array)
 
 ```
+<br><br>
 
 
+## Insertion Sort 
+*Best Case* : O(n^2^) 
+*Average Case* : O(n^2^) 
+*Worst Case* : O(n^2^) 
+
+> We start by building a sorted sequence with one element
+> Then we pick up the next unsorted element and insert it into it's correct place in the already sorted sequence
+
+#### *Algorithm*
+```
+
+```
+
+### *Python Code*
+```python
+
+```
 
 # Questions for MST
 
 >Q1. What is an Algorithm ? Why do we analyse algorithms?
 
-Ans. *An Algorithm is the step-by-step instruction given to sove a certain problem*
+**Ans**. *An Algorithm is the step-by-step instruction given to sove a certain problem*
 Just how there are many ways to travel from a given 'City A' to 'City B', there can be multiple algorithms for a given question. 
 Analysing them helps us figure out which algorithm is the most suitable and the most effective.
 
@@ -258,7 +293,7 @@ Analysing them helps us figure out which algorithm is the most suitable and the 
 
 >Q2. What is running time anaylsis ?
 
-Ans. It is the process of determining how processing time increases as the size of the problem ( input size ) increases. 
+**Ans**. It is the process of determining how processing time increases as the size of the problem ( input size ) increases. 
 The following are the different types of inputs we encounter : 
 * Size of an array
 * Polynomial Degree
@@ -270,6 +305,8 @@ The following are the different types of inputs we encounter :
 
 > Q3. 
 
+
+<br><br>
 # Introduction PPT - Shortnotes
 
 
