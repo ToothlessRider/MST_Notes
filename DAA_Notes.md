@@ -1,4 +1,4 @@
-#  DAA Notes for MST
+S#  DAA Notes for MST
 > Author : Aaron Augustine
 
 > Star the gist so that I can get a consensus on how many people are using this resource
@@ -285,6 +285,103 @@ print("Sorted array:", array)
 ```
 
 # Questions for MST
+
+## PYQ's
+
+
+> [Reference : Math markdown](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+
+<br>
+
+> Q1 a. A machlne needs a minimum of 300 sec to sort 1100 elements by Quick sort. The minimum time needed to sort 200 elements will be?
+
+**Ans**.Minimum time needed to sort 200 elements with *Quick Sort* means 
+T(n) = O(nlogn) 
+
+t<sub>1</sub> = 300 sec
+n<sub>1</sub> = 1100 elements
+t<sub>2</sub> = ??
+n<sub>2</sub> = 200elements
+
+So, 
+
+
+
+ $\frac{300} {x}= \frac{1100 log 1100} {200 log 200}$ 
+ 
+ $\frac{300} {x}= \frac{1100}{200} \times \frac{log 1100} { log200 }$ 
+ 
+ $x = 300 \times \frac{2}{11} \times 0.75657116126 =41.267seconds$
+
+<hr>
+
+> Q1 b. Explain the characteristics of an algorithm 
+
+**Ans**.  *An algorithm is  aset of well defined instructions to solve a particular problem*
+
+It's characteristics are as follows :  <mark>IOFUEL</mark>
+* Input : Requires input ( other than 0 )
+* Output : Outcomes at the end of algo
+* Finiteness : No, of instructions should be finite 
+* Unambiguity : Instructions should be clear
+* Effectiveness : Should be adequate to solve the problem
+* Language Independent : Instructions can be implemented in any language
+
+**![](https://lh7-us.googleusercontent.com/XUTtGr-QhOm7WYW8dDSjlNicxs5UMCiE9kzUkMjPhvO4ArvjTUmtsHtvMAmgRL_jf9FslJtoLcss7-qRX3uQSu0Oa0IEKiZ837G3F_TWb2nXJmvLcHPqQ_kmszPD7UCD_Q15-suyXMYxZOXWWxdFbU0)**
+
+<hr>
+
+> Q2 b. Write the algorithm for selection sort using recursion 
+
+**Ans**. 
+#### *Algorithm*
+```
+SelectionSort(Arr,start,n)
+	if ( start >= n-1 )
+		return;
+	
+	minpos = start;
+	//Locate the minimum element and move it to the start of the segment
+	for( int i = start + 1; i < n; i++)
+		if( Arr[i] < Arr[minpos] )
+			minpos = i;
+		
+	swap(Arr, start, minpos);
+
+	//Recursively call SelectionSort function
+	SelectionSort(Arr,start+1,n);
+		
+
+```
+
+<hr>
+
+> Q3 a. What is the time complexity of this code, 
+```
+for (i = 0; i < n; i++) {
+    for (j = 0; j < i * i; j++) {
+        if (j % i == 0) {
+            for (k = 0; k < j; k++){
+                printf("xyz");
+            }
+        }
+    }
+}
+
+``` 
+?
+**Ans**. T(n) of for loop<sub>1</sub> : O(n)
+> Loop executes from i = 0 to i = n
+
+T(n) of for loop<sub>2</sub> : O(n<sup>2</sup> - n)  $\approx$ O(n<sup>2</sup>)
+> Loop executes from i = n to i= n<sup>2</sup>
+
+T(n) of for loop<sub>3</sub> : O(n<sup>2</sup>)
+> Since the maximum value of j here does till n<sup>2</sup> it executes from k=0 to k = n<sup>2</sup>
+
+Hence overall complexity = O(n<sup>5</sup>)
+
+<hr>
 
 >Q1. What is an Algorithm ? Why do we analyse algorithms?
 
