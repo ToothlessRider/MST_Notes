@@ -315,12 +315,46 @@ print("Sorted array:", array)
 
 #### *Algorithm*
 ```
+QuickSort(Arr,l,r)
+	if( r - l <= 1)
+		return;
+	
+	yellow = l + 1;
+	for( green = l + 1; green < r; green++ ) 
+		if ( Arr[green] <= Arr[l] ) // l is pivot element
+			swap(Arr, yellow, green);
+			yellow++;
+		
+	swap(Arr,l,yellow-1); // moving pivot element ahead of lower part
 
+	//Recursively calling QuickSort
+	Quicksort(Arr,l,yellow-1);
+	Quicksort(Arr,yellow,r);
 
 ```
 
 ### *Python Code*
 ```python
+def QuickSort(Arr, l, r):
+    if l >= r:
+        return
+    
+    yellow = l + 1
+    for green in range(l + 1, r):
+        if Arr[green] <= Arr[l]:
+            Arr[yellow], Arr[green] = Arr[green], Arr[yellow]
+            yellow += 1
+            
+    Arr[l], Arr[yellow - 1] = Arr[yellow - 1], Arr[l]
+    
+    # Recursively calling QuickSort
+    QuickSort(Arr, l, yellow - 1)
+    QuickSort(Arr, yellow, r)
+
+# Example input and usage
+Arr = [3, 6, 8, 10, 1, 2, 1]
+QuickSort(Arr, 0, len(Arr))
+print("Sorted array:", Arr)
 
 ```
 <hr>
@@ -488,8 +522,9 @@ The following are the different types of inputs we encounter :
 
 > Q3. 
 
+<hr>
+<br><br><br>
 
-<br><br>
 # Introduction PPT - Shortnotes
 
 
@@ -509,6 +544,8 @@ There are two types of Data Types :
 - User Defined Data types : 
 ![](https://lh7-us.googleusercontent.com/rylKh1jPp5tTkKNDRyDw4jy8VJTXGnKO9BAdBF_AhoevlPpGEkTV8AYI693xJW3NIaByvFifQNjldUqIYLJWQmN6AXWRIQGK0S_UqY3n9AW3zUthqG20MaaMf1m636t69-LZNgKVz1k4tg9Q758DkZ4)
 
+<hr>
+
 ## Data Structure 
 
 > [Reference : Data structure based mcqs](https://www.sanfoundry.com/sorting-multiple-choice-questions-mcq/)
@@ -525,7 +562,7 @@ When we combine the user defined data structures with their operations they are 
 * Declaration of Operations
 
 Ex : Linked Lists, Stacks, Queues, Priority Queues, Binary Trees, Dictionaries, Disjoint Sets, Hash Tables, Graphs, etc
-
+<hr>
 
 ## Commonly Used Rate of growths
 
@@ -539,6 +576,8 @@ The flowchart above describes the decrease in time complexity, of the rate of gr
 > * Worst Case
 > * Best Case 
 > * Averge Case
+
+<hr>
 
 ## Asymptotic Notation
 [Reference : Aysmptotic notations - Big-O,Ω and theta](https://www.youtube.com/watch?v=A03oI0znAoc)
@@ -556,7 +595,9 @@ The flowchart above describes the decrease in time complexity, of the rate of gr
 
 ## Theta Notation
 * This shows the average bound of afunction
+
 <hr>
+<br><br><br>
 
 # Arrays and Linked Lists 
 > [Reference : Array and Array ops mcqs](https://www.sanfoundry.com/data-structure-questions-answers-array-array-operations/)
