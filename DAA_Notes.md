@@ -283,6 +283,49 @@ print("Sorted array:", array)
 ```python
 
 ```
+<hr>
+
+## Merge Sort 
+*Best Case* : O(n logn)
+*Average Case* : O(n logn)
+*Worst Case* : O(n<sup>2</sup>)
+
+> We start by building a sorted sequence with one element
+> Then we pick up the next unsorted element and insert it into it's correct place in the already sorted sequence
+
+#### *Algorithm*
+```
+
+```
+
+### *Python Code*
+```python
+
+```
+<hr>
+
+## Quick Sort
+*Best Case* : O(n logn)
+*Average Case* : O(n logn)
+*Worst Case* : O(n<sup>2</sup>)
+
+>We choose a pivot element ( say the very first value.
+>Parition it into lower part ( lesser than pivot ) and upper part ( greater than pivot ) 
+>Then we recursively sort those two halves and finally combine the sorted subarrays
+
+#### *Algorithm*
+```
+
+
+```
+
+### *Python Code*
+```python
+
+```
+<hr>
+
+
 
 # Questions for MST
 
@@ -331,9 +374,28 @@ It's characteristics are as follows :  <mark>IOFUEL</mark>
 
 <hr>
 
-> Q2 b. Write the algorithm for selection sort using recursion 
+> Q2 a. What is stable sorting and give example of stable and unstable sorting algorithms
 
 **Ans**. 
+### Stable Sorting 
+Stable sorting referes the a sorting algorithm's ability to preserve the relative order of two equal elements in the input array. 
+Ex. If students are listed in alphabetical order along with their Math marks.
+> If after sorting, students with the same marks are still in alphabetical order then it is stable sorting.
+
+### Examples of stable and unstable sorting :
+Stable Sorting Algorithm : **Merge Sort**
+* Merge sort is stable if we merge carefully, i.e., if we don't allow the elements from the right to overtake the elements from the left.
+* Favour the left list while breaking ties.
+
+Unstable Sorting Algorithm : **Quick Sort**
+* The swap operation that takes place during partitioning disturbs the original order.
+
+
+<hr>
+
+> Q2 b. Write the algorithm for selection sort using recursion 
+
+
 #### *Algorithm*
 ```
 SelectionSort(Arr,start,n)
@@ -382,6 +444,26 @@ T(n) of for loop<sub>3</sub> : O(n<sup>2</sup>)
 Hence overall complexity = O(n<sup>5</sup>)
 
 <hr>
+
+> Q3 b. Sort the following array using quicksort method 
+> 24  56  47  35  10  90  82  31
+
+**Ans**. 
+**![](https://lh7-us.googleusercontent.com/XU_dhretlAbnvwEcALd7Z0-VD7FLCkQ41g-vWnP59o8AuEOaFGSq-CbOna_xlLdcZBZsm3x94zflrwDP1vdh_9FsdGrvtBXBhOzWvQF4VOlDi0U72_-EjfYMHnAO3sgmq1EiyUZ74uzmCLVztWFnKB4)**
+**![](https://lh7-us.googleusercontent.com/6N2nAxLGtJmV6hCIY_fY9sFBAswVcC6vY36kVqKIcvR5glvZP5vesit8BkkBGiz3ZR4WiInQo9acRLQXKWSUdDFWiDEfXPdmGaKiuTQx5PazlEKY0w03Xq4_UickocyVmHlRRKoJ1xjR8_OxZePZ70A)**
+
+<hr>
+
+> Q4 a. Which sorting algorithm is best if the list is already sorted ? Why?
+
+**Ans**. If the list is already sorted, the best sorting algorithm to use would be **Insertion Sort**.
+
+The reason is that Insertion Sort has a time complexity of O(n) in the best-case scenario when the input list is already sorted. In this case, Insertion Sort simply performs a linear scan through the list to confirm that it's sorted, resulting in minimal comparisons and swaps.
+
+Other sorting algorithms like Merge Sort, Quick Sort, or Heap Sort have a worst-case time complexity of O(n log n), even if the list is already sorted. This means they would still perform additional comparisons and swaps, even though they are unnecessary in this scenario.
+<hr>
+
+## Questions for the Exam!
 
 >Q1. What is an Algorithm ? Why do we analyse algorithms?
 
