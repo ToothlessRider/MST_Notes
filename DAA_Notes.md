@@ -29,7 +29,7 @@
 *Average Case* : O(n)
 *Worst Case* : Element to be found is the last element [ O(n) ] 
 
-#### *Algorithm*
+#### *Pseudocode*
 ```
 function search(A, K)
     i = 0;
@@ -80,7 +80,7 @@ Steps to follow :
 
 > Since it is **Binary** search, the base of the log will be 2
 
-#### *Algorithm*
+#### *Pseudocode*
 ```
 bsearch(K, A, l, r) // A sorted, search for K in A[l..r-1]
     if (r - l == 0)
@@ -138,7 +138,7 @@ Therefore if we unwind the recurrence
 > * Compares each element to the current element.
 >  * Looks to swap if the compared element is smaller.
 
-#### *Algorithm*
+#### *Pseudocode*
 ```
 SelectionSort(A, n) // Sort A of size n
     for (startpos = 0; startpos < n; startpos++)
@@ -219,7 +219,7 @@ public class selection_sort {
 *Average Case* : O(n<sup>2</sup>)
 *Worst Case* : O(n<sup>2</sup>)
 
-#### *Algorithm*
+#### *Pseudocode*
 ```
 SelectionSort(A, start, n) // Sort A from start to n-1
     if (start >= n - 1)
@@ -271,18 +271,22 @@ print("Sorted array:", array)
 *Average Case* : O(n<sup>2</sup>)
 *Worst Case* : O(n<sup>2</sup>)
 
-> We start by building a sorted sequence with one element
-> Then we pick up the next unsorted element and insert it into it's correct place in the already sorted sequence
+> * We take the top most paper in the stack and then create a new stack. 
+> * Take a second paper and compare it to the first, and then place it with respect to the first paper.
+> * Similarly as the papers in crease compare the paper taken from the 1st stack with n number of papers in the second stack and place it accordingly.
 
-#### *Algorithm*
+#### *Pseudocode*
+```
+InsertionSort(Arr,n)
+	for(pos = 1; pos < n; pos++)
+	// In each iteration Arr[0].... Arr[pos-1] is already sorted
+	
+	nextpos = pos
+	while(nextpos > 0 && Arr[nextpos] < Arr[nextpos - 1])
+		swap(Arr,nextpos,nextpos-1)
+		nextpos = nextpos - 1
 ```
 
-```
-
-### *Python Code*
-```python
-
-```
 <hr>
 
 ## Merge Sort 
@@ -290,18 +294,22 @@ print("Sorted array:", array)
 *Average Case* : O(n logn)
 *Worst Case* : O(n<sup>2</sup>)
 
-> We start by building a sorted sequence with one element
-> Then we pick up the next unsorted element and insert it into it's correct place in the already sorted sequence
+> When combining two sorted arrays we use merge sort in case the elements of the two arrays will stack in a different sorted order if merged.
 
-#### *Algorithm*
+#### *Pseudocode*
+```
+function Merge(Arr, m, B, n, C )
+	
+	i, j, k = 0;
+	
+	while(k < m+n)
+		if(j == n or A[i] <= B[j] )
+			C[k] = A[i]; i++;k++;
+		
+		if(i == m or A[i] > B[j])
+			C[k] = B[j]; j++;k++;
 ```
 
-```
-
-### *Python Code*
-```python
-
-```
 <hr>
 
 ## Quick Sort
@@ -313,7 +321,7 @@ print("Sorted array:", array)
 >Parition it into lower part ( lesser than pivot ) and upper part ( greater than pivot ) 
 >Then we recursively sort those two halves and finally combine the sorted subarrays
 
-#### *Algorithm*
+#### *Pseudocode*
 ```
 QuickSort(Arr,l,r)
 	if( r - l <= 1)
@@ -430,7 +438,7 @@ Unstable Sorting Algorithm : **Quick Sort**
 #### Q2 b. Write the algorithm for selection sort using recursion 
 
 
-#### *Algorithm*
+#### *Pseudocode*
 ```
 SelectionSort(Arr,start,n)
 	if ( start >= n-1 )
@@ -449,6 +457,15 @@ SelectionSort(Arr,start,n)
 		
 
 ```
+
+#### *Algorithm*
+1. First we create the base condition to check first index is >= last index - 1
+2. Set the minimum position as the first index.
+3. Enter a for loop for n iterations where i = start index + 1.
+4. Use an if condition to check if the currently accessed element is smaller than  element at minimum position.
+5. If yes then minimum position index gets value i. 
+6. Then move the minimum element to the starting position of the current segment.
+7. Recursively call SelectionSort function while passing the start index + 1 value to iterate through the array.
 
 <hr>
 
@@ -520,7 +537,19 @@ The following are the different types of inputs we encounter :
 
 <hr>
 
-> Q3. 
+> Q3. What is meant by Time Complexity 
+of an algorithm ?
+
+**Ans**. Time complexity of an algorithm is the time taken by it to solve the problem in question.
+
+There can be three cases for time complexity ( Asymptotic Notation )
+1. Worst Case
+2. Average Case
+3. Best Case
+
+> Q4. What is Upper Bound analysis ?
+
+**Ans**.
 
 <hr>
 <br><br><br>
@@ -644,8 +673,10 @@ It is a DS used to store collections of data, and it has the following propertie
 ## Stacks
 A stack is a simple data structure used for storing data. In this the order that they arrive in is important, just like a stack of plates, the first one stacked is the last to be used.
 
-> Two operations that can be done on astack are "Push" (insert data ) and "Pop" ( remove data )
+> Two operations that can be done on a stack are "Push" (insert data ) and "Pop" ( remove data )
 
 **![](https://lh7-us.googleusercontent.com/eB8AtQSRUY1d89s7QtMfoSSsiVcKzPgAbnwL6hhH5-EJyjPV77aE7FMjnH1QGBbiJluc-malu0khGY975dkPQyWkYZgZTEJwpv1m9Yk_DB32auUOUPxUCTVRtz38hemQMRklcb4frrTUsXEKywRM89Q)**
 
+> It is an ordered list, where insertion and deletion are done at one end.
+> The Last element inserted is the first one to be deleted and hence it is called Last In First Out or First In Last Out ( LIFO / FILO )
 
