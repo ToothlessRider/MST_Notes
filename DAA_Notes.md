@@ -336,7 +336,7 @@ print("Sorted array:", array)
 
 <br>
 
-> Q1 a. A machlne needs a minimum of 300 sec to sort 1100 elements by Quick sort. The minimum time needed to sort 200 elements will be?
+#### Q1 a. A machlne needs a minimum of 300 sec to sort 1100 elements by Quick sort. The minimum time needed to sort 200 elements will be?
 
 **Ans**.Minimum time needed to sort 200 elements with *Quick Sort* means 
 T(n) = O(nlogn) 
@@ -358,7 +358,7 @@ So,
 
 <hr>
 
-> Q1 b. Explain the characteristics of an algorithm 
+#### Q1 b. Explain the characteristics of an algorithm 
 
 **Ans**.  *An algorithm is  aset of well defined instructions to solve a particular problem*
 
@@ -374,7 +374,7 @@ It's characteristics are as follows :  <mark>IOFUEL</mark>
 
 <hr>
 
-> Q2 a. What is stable sorting and give example of stable and unstable sorting algorithms
+#### Q2 a. What is stable sorting and give example of stable and unstable sorting algorithms
 
 **Ans**. 
 ### Stable Sorting 
@@ -393,7 +393,7 @@ Unstable Sorting Algorithm : **Quick Sort**
 
 <hr>
 
-> Q2 b. Write the algorithm for selection sort using recursion 
+#### Q2 b. Write the algorithm for selection sort using recursion 
 
 
 #### *Algorithm*
@@ -418,7 +418,7 @@ SelectionSort(Arr,start,n)
 
 <hr>
 
-> Q3 a. What is the time complexity of this code, 
+####  Q3 a. What is the time complexity of this code, 
 ```
 for (i = 0; i < n; i++) {
     for (j = 0; j < i * i; j++) {
@@ -445,7 +445,7 @@ Hence overall complexity = O(n<sup>5</sup>)
 
 <hr>
 
-> Q3 b. Sort the following array using quicksort method 
+#### Q3 b. Sort the following array using quicksort method 
 > 24  56  47  35  10  90  82  31
 
 **Ans**. 
@@ -454,7 +454,7 @@ Hence overall complexity = O(n<sup>5</sup>)
 
 <hr>
 
-> Q4 a. Which sorting algorithm is best if the list is already sorted ? Why?
+#### Q4 a. Which sorting algorithm is best if the list is already sorted ? Why?
 
 **Ans**. If the list is already sorted, the best sorting algorithm to use would be **Insertion Sort**.
 
