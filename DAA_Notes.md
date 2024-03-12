@@ -432,6 +432,7 @@ for (i = 0; i < n; i++) {
 
 ``` 
 ?
+
 **Ans**. T(n) of for loop<sub>1</sub> : O(n)
 > Loop executes from i = 0 to i = n
 
