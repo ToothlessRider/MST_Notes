@@ -699,3 +699,17 @@ A stack is a simple data structure used for storing data. In this the order that
 > It is an ordered list, where insertion and deletion are done at one end.
 > The Last element inserted is the first one to be deleted and hence it is called Last In First Out or First In Last Out ( LIFO / FILO )
 
+
+## Queues
+A queue is a data strucutre used to store data, in which the order that the data arrives is important.
+
+It is an ordered list in which insertions are done at one end ( *rear* ) and deletions are done at the other end (*front*)
+
+Also known as First in First Out or Last in Last Out
+
+### Applications of Queues : 
+* Operating System schedule jobs in the order of arrival
+* Simulation of real world queues
+* Multiprogramming
+* Asynchronous data transfer, etc
+
