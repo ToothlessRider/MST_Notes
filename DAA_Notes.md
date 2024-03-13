@@ -269,7 +269,9 @@ print("Sorted array:", array)
 ## Insertion Sort 
 *Best Case* : O(n<sup>2</sup>)
 *Average Case* : O(n<sup>2</sup>)
-*Worst Case* : O(n<sup>2</sup>)
+*Worst Case* : O(n<sup>2</sup>) 
+
+The *Worst Case* here would be passing an already sorted array to insertion sort. ( Since it checks from right to left to see where the element fits in the array )
 
 > * We take the top most paper in the stack and then create a new stack. 
 > * Take a second paper and compare it to the first, and then place it with respect to the first paper.
@@ -292,7 +294,9 @@ InsertionSort(Arr,n)
 ## Merge Sort 
 *Best Case* : O(n logn)
 *Average Case* : O(n logn)
-*Worst Case* : O(n<sup>2</sup>)
+*Worst Case* : O(n logn)
+The *Worst Case* here would be passing [5,6,7,8,9,1,2,3,4] to the algorithm.
+
 
 > When combining two sorted arrays we use merge sort in case the elements of the two arrays will stack in a different sorted order if merged.
 
@@ -316,6 +320,7 @@ function Merge(Arr, m, B, n, C )
 *Best Case* : O(n logn)
 *Average Case* : O(n logn)
 *Worst Case* : O(n<sup>2</sup>)
+The *Worst Case* here would be passing an already sorted array (either in ascending or descending order) to Quick sort. 
 
 >We choose a pivot element ( say the very first value.
 >Parition it into lower part ( lesser than pivot ) and upper part ( greater than pivot ) 
@@ -455,17 +460,14 @@ SelectionSort(Arr,start,n)
 	//Recursively call SelectionSort function
 	SelectionSort(Arr,start+1,n);
 		
-
 ```
 
 #### *Algorithm*
-1. First we create the base condition to check first index is >= last index - 1
-2. Set the minimum position as the first index.
-3. Enter a for loop for n iterations where i = start index + 1.
-4. Use an if condition to check if the currently accessed element is smaller than  element at minimum position.
-5. If yes then minimum position index gets value i. 
-6. Then move the minimum element to the starting position of the current segment.
-7. Recursively call SelectionSort function while passing the start index + 1 value to iterate through the array.
+1. Start with the second element in the array ( Iterate through to the last element )
+2. Set the current element as key for each iteration.
+3. Compare the key with the previous element, if it is smaller then swap it.
+4. The above process continues till the previous element is not greater than the key.
+5. With recursion we will just have to pass the index of the next key to the function
 
 <hr>
 
@@ -517,7 +519,7 @@ Other sorting algorithms like Merge Sort, Quick Sort, or Heap Sort have a worst-
 
 ## Questions for the Exam!
 
->Q1. What is an Algorithm ? Why do we analyse algorithms?
+#### Q1. What is an Algorithm ? Why do we analyse algorithms?
 
 **Ans**. *An Algorithm is the step-by-step instruction given to sove a certain problem*
 Just how there are many ways to travel from a given 'City A' to 'City B', there can be multiple algorithms for a given question. 
@@ -525,7 +527,7 @@ Analysing them helps us figure out which algorithm is the most suitable and the 
 
 <hr>
 
->Q2. What is running time anaylsis ?
+#### Q2. What is running time anaylsis ?
 
 **Ans**. It is the process of determining how processing time increases as the size of the problem ( input size ) increases. 
 The following are the different types of inputs we encounter : 
@@ -537,7 +539,7 @@ The following are the different types of inputs we encounter :
 
 <hr>
 
-> Q3. What is meant by Time Complexity 
+#### Q3. What is meant by Time Complexity 
 of an algorithm ?
 
 **Ans**. Time complexity of an algorithm is the time taken by it to solve the problem in question.
@@ -547,9 +549,24 @@ There can be three cases for time complexity ( Asymptotic Notation )
 2. Average Case
 3. Best Case
 
-> Q4. What is Upper Bound analysis ?
+#### Q4. What is Upper Bound analysis ?
 
-**Ans**.
+**Ans**. It is the case where the maximum number of operations have to be executed to solve the problem / sort the array.
+Ex. For Linear Search the worst case would be when the element is not present in the array. O(n)
+
+<hr>
+
+#### Q5. What is Lower Bound analysis ?
+
+**Ans** 
+
+<hr>
+
+#### Q6. 
+
+**Ans**
+
+<hr>
 
 <hr>
 <br><br><br>
