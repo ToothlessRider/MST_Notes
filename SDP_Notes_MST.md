@@ -14,10 +14,10 @@
 # PYQ's
 #### Q1 a. Why should software development  focus on the needs of Users? 
 *Ans*. Software development should focus on the needs of the users for the following reasons : **R<sup>3</sup>**
-* To **reduce training and support**costs ( i.e, make it so that users naturally understand how to use the software ).
-* To **reduce time to learn** the system..
-* To **reduce costs by developing only the required features**.
-* To **create a UI accurate to what the user wants**.
+* To *reduce training and support*costs ( i.e, make it so that users naturally understand how to use the software ).
+* To *reduce time to learn* the system..
+* To *reduce costs by developing only the required features*.
+* To *create a UI accurate to what the user wants*.
 * Since UI is the entire application for users, making sure it is good and according to what the user wants is very important.
 
 
