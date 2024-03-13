@@ -295,6 +295,7 @@ InsertionSort(Arr,n)
 *Best Case* : O(n logn)
 *Average Case* : O(n logn)
 *Worst Case* : O(n logn)
+
 The *Worst Case* here would be passing [5,6,7,8,9,1,2,3,4] to the algorithm.
 
 
@@ -320,6 +321,7 @@ function Merge(Arr, m, B, n, C )
 *Best Case* : O(n logn)
 *Average Case* : O(n logn)
 *Worst Case* : O(n<sup>2</sup>)
+
 The *Worst Case* here would be passing an already sorted array (either in ascending or descending order) to Quick sort. 
 
 >We choose a pivot element ( say the very first value.
