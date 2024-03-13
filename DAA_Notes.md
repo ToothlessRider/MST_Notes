@@ -557,20 +557,6 @@ There can be three cases for time complexity ( Asymptotic Notation )
 Ex. For Linear Search the worst case would be when the element is not present in the array. O(n)
 
 <hr>
-
-#### Q5. What is Lower Bound analysis ?
-
-**Ans** 
-
-<hr>
-
-#### Q6. 
-
-**Ans**
-
-<hr>
-
-<hr>
 <br><br><br>
 
 # Introduction PPT - Shortnotes
