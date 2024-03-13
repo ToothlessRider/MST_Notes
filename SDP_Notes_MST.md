@@ -17,7 +17,7 @@
 * To <mark>reduce training and support</mark> costs ( i.e, make it so that users naturally understand how to use the software ).
 * To <mark>reduce time to learn</mark> the system..
 * To <mark>reduce costs by developing only the required features</mark>.
-* To <mark>create a UI accurate to what the user wants</mark>.
+* To <span style="color: red;">create a UI accurate to what the user wants</span>
 * Since UI is the entire application for users, making sure it is good and according to what the user wants is very important.
 
 
