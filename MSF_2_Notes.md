@@ -8,34 +8,29 @@
 #### Q1 a. What is FA (finite automata)? Write formal definition of finite automata? Draw the finite automata model diagram and explain input tape finite control.
 
 *Ans*. Finite automata (FA), also referred to as finite-state machines, are ideal for recognizing specific patterns within strings of symbols.
-They are
-
-**Formal Definition**
-
 A finite automaton is represented by a 5-tuple:
-
-**Q**: A finite set of states.
-**∑**: A finite set of input symbols (the alphabet).
-**δ**: The transition function, which maps a state and an input symbol to the next state (Q x ∑ → Q).
-**q0**: The initial or start state (an element of Q).
-**F**: A set of final or accepting states (a subset of Q)
+* **Q**: A finite set of states.
+* **∑**: A finite set of input symbols (the alphabet).
+* **δ**: The transition function, which maps a state and an input symbol to the next state (Q x ∑ → Q).
+* **q0**: The initial or start state (an element of Q).
+* **F**: A set of final or accepting states (a subset of Q)
 
 #### Finite Automata Model Diagram
 
 A finite automata diagram is a visual representation of the following:
 
-**States**: Represented as circles.
-**Transitions**: Represented as arrows labeled with input symbols. The arrow points from the current state to the next state based on the input.
-**Start State**: Marked with a special arrow pointing towards it.
-**Accepting States**: Usually marked with double circles.
+* **States**: Represented as circles.
+* **Transitions**: Represented as arrows labeled with input symbols. The arrow points from the current state to the next state based on the input.
+* **Start State**: Marked with a special arrow pointing towards it.
+* **Accepting States**: Usually marked with double circles.
 
 **![](https://lh7-us.googleusercontent.com/pta7vwt5BrzDpmXdkmvj62Fq-kGpHUSyAnQ8w6_aIbpIl_BuQ2FpjPtSxV3xPZcLr4nsB3ri5Tsu1uOoYiZaMzoJiUazromog77oW2mah5ShptAp0aPWLz9x5UTLsFUpDVvRZbiu5zR5seGtS7gMTsA)**
-**Input tape**: It is a linear tape having some number of cells. Each input symbol is placed in each cell.
-**Finite control**: The finite control decides the next state on receiving particular input from input tape. The tape reader reads the cells one by one from left to right, and at a time only one input symbol is read.
+* **Input tape**: It is a linear tape having some number of cells. Each input symbol is placed in each cell. 
+* **Finite control**: The finite control decides the next state on receiving particular input from input tape. The tape reader reads the cells one by one from left to right, and at a time only one input symbol is read.
 
 <hr>
 
-#### Q1 b. Draw the transition diagram (graph) and write Transition table represent the DFA M =(Q, E, d, q<sub>0</sub>, F) i.e. M ={{q<sub>0</sub>, q<sub>1</sub>, q<sub>2</sub>},{0, 1}, d, q<sub>0</sub>, {q2}}  where d is transition function given by 
+#### Q1 b. Draw the transition diagram (graph) and write a transition table to represent the DFA,  M =(Q, E, d, q<sub>0</sub>, F) i.e. M ={{q<sub>0</sub>, q<sub>1</sub>, q<sub>2</sub>},{0, 1}, d, q<sub>0</sub>, {q2}}  where d is transition function given by 
 | | |
 |--|--|
 |d(q<sub>0</sub>, 0) = q<sub>0</sub>, q<sub>1</sub>|d(q<sub>0</sub>, 1 ) = q<sub>1</sub>|
@@ -55,15 +50,6 @@ State\Input| 0 | 1 |
 q0 | q0, q1 | q1 | 
 q1 | q2| q0 |
 q2 | q0 | q1, q2 |
-
-#### Input Tape and Finite Control
-
-__Input Tape__: A conceptual storage mechanism holding the input string to be processed. It's divided into cells, with each cell containing one input symbol.
-__Finite Control__: The brain of the FA. It has a read head that:
-- Starts at the leftmost symbol of the input tape.
-- Reads one symbol at a time.
-- Determines the next state based on the current state and the input symbol using the transition function (δ).
-- Moves the read head one cell to the right.
 
 
 <hr>
@@ -191,7 +177,7 @@ Output String : baab
 * x = bYb
 
 *Ans* 
-**![](https://lh7-us.googleusercontent.com/FXt5QcriZqZg72FdjWuGwUn8Ah3duq6qyN-Kx1WLurKYbIPdqGdpqJSQwLtaiXu3H0J9QnSbmK2ijI81edYA43qMxB7oEoO4kX-2bUEpILNn7pDgKQpETPAptvhIhkIVl4ANI__9oqvaD2ZD4rvcQNY)**
+**![](https://lh7-us.googleusercontent.com/Ib_6_J5UIXud86VWuFe4j0pjJ8te-zED6SU7T6ISHXacMPyEYBUhKDJdxflCcZrvElF8Uz1YsIkav36RcZGuU2s321n3Gof8me-PVy0Rp8xmCXktbdOwA-ePuQakH3XowEA2V5aH_94HfwpXqXmtGbA)**
 
 
 #### Generate the string aabbaa and draw the derivation tree given that the production rule is : 
@@ -309,9 +295,57 @@ graph LR
 
 <hr>
 
-#### Q4 b. at is SVM support vector machine how does ? What are types of SVM? Draw a suitable diagram to show this. WHat is a Hyperlane what is support vector? What is margin. What is GMM [Gaussian mixture model]?
+#### Q4 b. What is SVM support vector machine how does it work ? What are types of SVM? Draw a suitable diagram to show this. What is a Hyperlane and a support vector? What is margin. What is GMM [Gaussian mixture model]?
+ 
+*Ans*. Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning.
+* It works best on smaller datasets 
+* Can be used for both regression and classification tasks but they work best for classification tasks
 
-*Ans* 
+In SVM we try to find a hyperplane that best separates the two classes.
+
+**![](https://lh7-us.googleusercontent.com/Ffi0zBT773JE4O3jFSGQTlKRVFYOMPlXwpPilHW3E4LumhlkhHtOlwFu9sge6KwOa5mPquamI6srFaCnOoLUaldwTySBrbAtZKAYZS7avuTTpaqKz-Xnn4U87ko4wMrX_rr0C0lN5TLr1gr3pkFW1k0)**
+
+#### Linear SVM
+When the data is perfectly linearly separable only then we can use Linear
+SVM.
+**![](https://lh7-us.googleusercontent.com/P_o7HoYPGO8Gr1KxrLzIOn1VdMO36CkCNMbxrT538uG6XUK42Ies0x9lMhbT2mUOiK8ZOd7APmYJY-aaHJeZCumOmhCB5wgWdzroQ-9RK5e9r0NrVC0k4k5zAi1q7Aci-r2ZQ9q5UIIG1BDlkmkx8aU)**
+**![](https://lh7-us.googleusercontent.com/z6_-zU9R9LR9U_0gmZ9Es--N7XEPDCIfjHzirfWlcpbv2wcV4I3CKdUwmJQ5bjunYYOuR9Vj7fgQcOGA18Ck92WyBO46-KiUHy6gkBGyNqiO3HeFEQMQFcwXfLW7Xc8KjuUx7Qf6QV1jaX-oeXC83cI)**
+>  Negative Hyperplane in the image below
+**![](https://lh7-us.googleusercontent.com/z6_-zU9R9LR9U_0gmZ9Es--N7XEPDCIfjHzirfWlcpbv2wcV4I3CKdUwmJQ5bjunYYOuR9Vj7fgQcOGA18Ck92WyBO46-KiUHy6gkBGyNqiO3HeFEQMQFcwXfLW7Xc8KjuUx7Qf6QV1jaX-oeXC83cI)**
+
+| Symbol | Name | Meaning | 
+|--|--|--|
+| ---- |Hyperplane | Straight Line dividing two sets of datapoints|
+|*/x | Support Vectors | Data points from different sets, closest to the margins |
+| *-/-x | Margin | It is the distance between the support vector and the hyperplane }
+
+
+#### Non Linear SVM 
+When the data is not linearly separable then we can use Non-Linear SVM,
+which means when the data points cannot be separated into 2 classes by
+using a straight line
+**![](https://lh7-us.googleusercontent.com/xX63Wu2C77ye0H4dpRmuYmG8L0POa9FZYLmLLtuwYyb7ORFL2AoTfoJhIptR_2KRDGt2RckF0B_JHogfeWguO37KJfdHi9atRPBH2CqcN8OaWkMDyCAu5ogPKb-wRB57tUevX31_hq0yYVGtpuFqcQ4)**
+**Support Vectors**: These are the points that are closest to the hyperplane. A
+separating line will be defined with the help of these data points.
+
+**Margin**: it is the distance between the hyperplane and the observations
+closest to the hyperplane (support vectors).
+<hr>
+
+#### GMM 
+GMM is a probabalistic model for representing Gaussian Distribution ( Also known as normal distribution ) and is in a bell shaped curve. It requires statistic values such as mean, standard deviation and such parameters. 
+**![](https://lh7-us.googleusercontent.com/po40sfMnraZk4NOhftSZ_bT7TEpuZtqd3ahVyV-mq87azvqfecw5dm30M8inbmMM-_3uJb54CbE_hJ32447Yk_mkInjOZAJvEYdsbP4U1l4t2Dj-edZC68tfW_JqPvWxB3fgguZd8fqErYUUFW5CxIw)**
+**![](https://lh7-us.googleusercontent.com/rbAoqaB5OLamb6ElC9zBW_zJYwqdvEsnLZIUtak2y_5-kYuJ7D2TtcIvqTofskl3gmE8Ii3qL21ofYbpWj22e-bE1vaU2cEk9DvXiQRkhq2yVUbNsb5Cfg2brBKHvqGagbs-p3KFY5QqfyQmWgTODYY)**
+Where 
+u = mean
+σ = standard deviation
+ x = normal random variable
+
+While modeling human height data, it is typically modelled as a normal distribution for each gender with an approximate mean of : 
+5'10" for males and
+5'5" for females
+
+
 
 ## Shortnotes - 56 Page pdf 
 
@@ -517,57 +551,4 @@ Given Production rules :
 *Ans* 
 
 **![](https://lh7-us.googleusercontent.com/cAiHLrCGN60cgVcHKEaAWPCUaMqyMTpFQ-EqoijA512lFDSBIkwJjjzjDz9JQjPDmw6YfQeMx0GX4sjw6nkZYg2keBPk2lGCNNBwDyJfjHhSQbHz8U3ILUkdzHrdxGxDKKQtp93BBC2p3MlkDW-1Sfg)**
-
-
-#### Q. What are the types of SVM ? Draw the classification tree diagram and explain them with graphs. What is Hyper plane and support vector ?
-
-*Ans* Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning.
-* It works best on smaller datasets 
-* Can be used for both regression and classification tasks but they work best for classification tasks
-
-In SVM we try to find a hyperplane that best separates the two classes.
-
-**![](https://lh7-us.googleusercontent.com/Ffi0zBT773JE4O3jFSGQTlKRVFYOMPlXwpPilHW3E4LumhlkhHtOlwFu9sge6KwOa5mPquamI6srFaCnOoLUaldwTySBrbAtZKAYZS7avuTTpaqKz-Xnn4U87ko4wMrX_rr0C0lN5TLr1gr3pkFW1k0)**
-
-#### Linear SVM
-When the data is perfectly linearly separable only then we can use Linear
-SVM.
-**![](https://lh7-us.googleusercontent.com/P_o7HoYPGO8Gr1KxrLzIOn1VdMO36CkCNMbxrT538uG6XUK42Ies0x9lMhbT2mUOiK8ZOd7APmYJY-aaHJeZCumOmhCB5wgWdzroQ-9RK5e9r0NrVC0k4k5zAi1q7Aci-r2ZQ9q5UIIG1BDlkmkx8aU)**
-**![](https://lh7-us.googleusercontent.com/z6_-zU9R9LR9U_0gmZ9Es--N7XEPDCIfjHzirfWlcpbv2wcV4I3CKdUwmJQ5bjunYYOuR9Vj7fgQcOGA18Ck92WyBO46-KiUHy6gkBGyNqiO3HeFEQMQFcwXfLW7Xc8KjuUx7Qf6QV1jaX-oeXC83cI)**
->  Negative Hyperplane in the image below
-**![](https://lh7-us.googleusercontent.com/z6_-zU9R9LR9U_0gmZ9Es--N7XEPDCIfjHzirfWlcpbv2wcV4I3CKdUwmJQ5bjunYYOuR9Vj7fgQcOGA18Ck92WyBO46-KiUHy6gkBGyNqiO3HeFEQMQFcwXfLW7Xc8KjuUx7Qf6QV1jaX-oeXC83cI)**
-
-| Symbol | Name | Meaning | 
-|--|--|--|
-| ---- |Hyperplane | Straight Line dividing two sets of datapoints|
-|*/x | Support Vectors | Data points from different sets, closest to the margins |
-| *-/-x | Margin | It is the distance between the support vector and the hyperplane }
-
-
-#### Non Linear SVM 
-When the data is not linearly separable then we can use Non-Linear SVM,
-which means when the data points cannot be separated into 2 classes by
-using a straight line
-**![](https://lh7-us.googleusercontent.com/xX63Wu2C77ye0H4dpRmuYmG8L0POa9FZYLmLLtuwYyb7ORFL2AoTfoJhIptR_2KRDGt2RckF0B_JHogfeWguO37KJfdHi9atRPBH2CqcN8OaWkMDyCAu5ogPKb-wRB57tUevX31_hq0yYVGtpuFqcQ4)**
-**Support Vectors**: These are the points that are closest to the hyperplane. A
-separating line will be defined with the help of these data points.
-
-**Margin**: it is the distance between the hyperplane and the observations
-closest to the hyperplane (support vectors).
-<hr>
-
-#### GMM 
-GMM is a probabalistic model for representing Gaussian Distribution ( Also known as normal distribution ) and is in a bell shaped curve. It requires statistic values such as mean, standard deviation and such parameters. 
-**![](https://lh7-us.googleusercontent.com/po40sfMnraZk4NOhftSZ_bT7TEpuZtqd3ahVyV-mq87azvqfecw5dm30M8inbmMM-_3uJb54CbE_hJ32447Yk_mkInjOZAJvEYdsbP4U1l4t2Dj-edZC68tfW_JqPvWxB3fgguZd8fqErYUUFW5CxIw)**
-**![](https://lh7-us.googleusercontent.com/rbAoqaB5OLamb6ElC9zBW_zJYwqdvEsnLZIUtak2y_5-kYuJ7D2TtcIvqTofskl3gmE8Ii3qL21ofYbpWj22e-bE1vaU2cEk9DvXiQRkhq2yVUbNsb5Cfg2brBKHvqGagbs-p3KFY5QqfyQmWgTODYY)**
-Where 
-u = mean
-σ = standard deviation
- x = normal random variable
-
-While modeling human height data, it is typically modelled as a normal distribution for each gender with an approximate mean of : 
-5'10" for males and
-5'5" for females
-
-
 
