@@ -5,9 +5,10 @@
 
 ## PYQ's
 
-#### Q1 a. What is FA finite automata? Write formal definition of finite automata? Draw the finite automata model diagram and explain input tape finite control.
+#### Q1 a. What is FA (finite automata)? Write formal definition of finite automata? Draw the finite automata model diagram and explain input tape finite control.
 
 *Ans*. Finite automata (FA), also referred to as finite-state machines, are ideal for recognizing specific patterns within strings of symbols.
+They are
 
 **Formal Definition**
 
