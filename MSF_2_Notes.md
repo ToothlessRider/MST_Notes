@@ -172,11 +172,18 @@ flowchart TD
 #### Generate the string p*q+r and draw the derivation tree given that production rule is: 
 * E=E+E
 * E=p/q/r
+
+*Ans* 
+
+
 #### Generate the string abbbb and draw the derivation tree given that the production rule is: 
 * s = axy
 * y = x
 * y = ∈
 * x = byb
+
+*Ans* 
+
 
 #### Generate the string aabbaa and draw the derivation tree given that the production rule is : 
 * s = aas
@@ -197,6 +204,107 @@ flowchart TD
 *Ans* 
 
 
+<hr>
+
+#### Q4. What is regular expression? Write the 4 rules of regular expresston Kleene closure(+), concatenation(.), union(U) Draw the finite automata of the given regular expression. The Regular Expression is : 
+1. Phi
+2. e-Epsilon
+3. a
+4. b
+5. ab
+6. a + b
+7. a * 
+8. a+
+9. 01
+10. 0 + 1 
+
+*Ans*. Regular Expression or RegEx represents a certain set ( collection ) of strings in some algebraic fashion, accepted by FA.
+
+It is the combination of strings and operations, 
+*String* : a, b, c, ...... x, y, z, etc 
+*Operations* : +, -, /, * 
+
+Types of reg ex are : 
+* *Kleene Closure* ( * ) : 
+	* a* = {ε, a, aa, aaa,...... }
+* *Positive Closure* ( + ) : 
+	* a<sup>+</sup> : { a, aa, aaa, ..... }
+* *Concatenation* ( . ) : 
+	* ab = {ab}
+* *Union* ( U ) : 
+	* ( a + b ) = { a, b }
+
+1. Φ (Phi ) 
+```mermaid
+graph LR
+	A((q0))
+```
+
+2. ε ( Epsilon ) 
+```mermaid
+graph LR
+	A((qn))
+```
+> Should be a double circled node to signify end of regular expression
+
+3. a 
+```mermaid
+graph LR
+	A((q0))--a--> B((q1))
+```
+
+4. b
+```mermaid
+graph LR
+	A((q0))--b--> B((q1))
+```
+
+5. ab
+```mermaid
+graph LR
+	A((q0))--a-->B((q1))--b-->c((q2))
+```
+
+6. ( a + b )
+```mermaid
+graph LR
+	A((q0))--a-->B((q1))
+	A--b-->B
+```
+
+7. a*
+```mermaid
+graph LR
+	A((q0))
+	A--a-->A
+```
+
+8. a+
+```mermaid
+graph LR
+	A((q0))--a-->B((q1))
+	B--a-->B
+```
+
+9. 01
+```mermaid
+graph LR
+	A((q0))--0-->B((q1))--1-->C((q2))
+
+```
+
+10. 0 + 1
+```mermaid
+graph LR
+	A((q0))--0-->B((q1))
+	A--1-->B
+```
+
+<hr>
+
+#### Q4 b. at is SVM support vector machine how does ? What are types of SVM? Draw a suitable diagram to show this. WHat is a Hyperlane what is support vector? What is margin. What is GMM [Gaussian mixture model]?
+
+*Ans* 
 
 ## Shortnotes - 56 Page pdf 
 
@@ -493,76 +601,63 @@ flowchart TD
 	
 ```
 
-
-#### Q. What is Regular Expression ?
-
-*Ans*. Regular Expression or RegEx represents a certain set ( collection ) of strings in some algebraic fashion, accepted by FA.
-
-It is the combination of strings and operations, 
-*String* : a, b, c, ...... x, y, z, etc 
-*Operations* : +, -, /, * 
-
-Types of reg ex are : 
-* *Kleene Closure* ( * ) : 
-	* a* = {ε, a, aa, aaa,...... }
-* *Positive Closure* ( + ) : 
-	* a<sup>+</sup> : { a, aa, aaa, ..... }
-* *Concatenation* ( . ) : 
-	* ab = {ab}
-* *Union* ( U ) : 
-	* ( a + b ) = { a, b }
-
 <hr>
 
 #### Q. The following are the regular expression ( Regular Expression ) draw their Finite Automata 
 
-1. Φ  : 
+*Ans*.
+
+1. Φ (Phi ) 
 ```mermaid
 graph LR
 	A((q0))
 ```
 
-2. ε
+2. ε ( Epsilon ) 
 ```mermaid
 graph LR
 	A((qn))
 ```
+> Should be a double circled node to signify end of regular expression
 
 3. a 
 ```mermaid
 graph LR
 	A((q0))--a--> B((q1))
 ```
-4. a + b
+
+4. b
 ```mermaid
 graph LR
 	A((q0))--b--> B((q1))
 ```
+
 5. ab
 ```mermaid
 graph LR
-	A((q0))--a-->B((q1))
-	A--b-->B
+	A((q0))--a-->B((q1))--b-->c((q2))
 ```
-6. ( a + b)
+
+6. ( a + b )
 ```mermaid
 graph LR
 	A((q0))--a-->B((q1))
 	A--b-->B
 ```
+
 7. a*
 ```mermaid
 graph LR
 	A((q0))
 	A--a-->A
 ```
+
 8. a+
 ```mermaid
 graph LR
 	A((q0))--a-->B((q1))
 	B--a-->B
 ```
-
 <hr>
 
 
@@ -583,7 +678,7 @@ G--->L[GMM : Gaussian Mixture Model ] & M[K-Means]
 
 #### Q. What are the types of SVM ? Draw the classification tree diagram and explain them with graphs. What is Hyper plane and support vector ?
 
-*Ans* Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning
+*Ans* Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning.
 
 ```mermaid
 flowchart TD 
@@ -609,10 +704,6 @@ A[Support Vector Machine]--->B[ Linear SVM ] & C[Non-Linear SVM / Kernel]
 **![](https://lh7-us.googleusercontent.com/xX63Wu2C77ye0H4dpRmuYmG8L0POa9FZYLmLLtuwYyb7ORFL2AoTfoJhIptR_2KRDGt2RckF0B_JHogfeWguO37KJfdHi9atRPBH2CqcN8OaWkMDyCAu5ogPKb-wRB57tUevX31_hq0yYVGtpuFqcQ4)**
 
 <hr>
-
-#### Q. What is GMM ? Explain with the help of graph
-
-
 
 
 
