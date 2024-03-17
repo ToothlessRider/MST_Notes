@@ -3,6 +3,147 @@
 
 > Star the gist so that I can get a consensus on how many people are using this resource
 
+## PYQ's
+
+#### Q1 a. What is FA finite automata? Write formal definition of finite automata? Draw the finite automata model diagram and explain input tape finite control.
+
+*Ans*. Finite automata (FA), also referred to as finite-state machines, are ideal for recognizing specific patterns within strings of symbols.
+
+**Formal Definition**
+
+A finite automaton is represented by a 5-tuple:
+
+**Q**: A finite set of states.
+**∑**: A finite set of input symbols (the alphabet).
+**δ**: The transition function, which maps a state and an input symbol to the next state (Q x ∑ → Q).
+**q0**: The initial or start state (an element of Q).
+**F**: A set of final or accepting states (a subset of Q)
+
+#### Finite Automata Model Diagram
+
+A finite automata diagram is a visual representation of the following:
+
+**States**: Represented as circles.
+**Transitions**: Represented as arrows labeled with input symbols. The arrow points from the current state to the next state based on the input.
+**Start State**: Marked with a special arrow pointing towards it.
+**Accepting States**: Usually marked with double circles.
+
+**![](https://lh7-us.googleusercontent.com/SVYnbBlLfjkcuZFRLHocOCfJZRprS0Rw0KjbGfCWcVfel-xVXmRNLfrmLjozwyIlRspwaoCSpc3neq71fyQ45HH3JPFlUBB08-ibW3yy44PXkjtblFqSYC2UfA62a5a-F8aaK_DOzugmdNAZ_MstYyM)**
+<hr>
+
+#### Q1 b. Draw the transition diagram (graph) and write Transition table represent the DFA M =(Q, E, d, q<sub>0</sub>, F) i.e. M ={{q<sub>0</sub>, q<sub>1</sub>, q<sub>2</sub>},{0, 1}, d, q<sub>0</sub>, {q2}}  where d is transition function given by 
+| | |
+|--|--|
+|d(q<sub>0</sub>, 0) = q<sub>1</sub>, q<sub>1</sub>|d(q<sub>0</sub>, 1 ) = q<sub>1</sub>|
+|d(q<sub>1</sub>, 0) = q<sub>2</sub>|d(q<sub>1</sub>, 1 ) = q<sub>0</sub>|
+|d(q<sub>2</sub>, 0) = q<sub>2</sub>|d(q<sub>2</sub>, 1 ) = q<sub>1</sub>, q<sub>2</sub>|
+
+*Ans* 
+### Transition Diagram
+
+
+```mermaid  
+graph LR
+A((q0)) -- 0 --> B((q1)) -- 0 --> C((q2))
+
+A -- 0 --> A
+A -- 1 --> B
+B -- 1 --> A
+C -- 1 --> B
+C -- 1 --> C
+C -- 0 --> C
+
+```
+
+
+### Transition Table
+State\Input| 0 | 1 |
+--|--|--|
+q0 | q0, q1 | q1 | 
+q1 | q2| q0 |
+q2 | q0 | q1, q2 |
+
+#### Input Tape and Finite Control
+
+__Input Tape__: A conceptual storage mechanism holding the input string to be processed. It's divided into cells, with each cell containing one input symbol.
+__Finite Control__: The brain of the FA. It has a read head that:
+- Starts at the leftmost symbol of the input tape.
+- Reads one symbol at a time.
+- Determines the next state based on the current state and the input symbol using the transition function (δ).
+- Moves the read head one cell to the right.
+
+
+<hr>
+
+#### Q2 a. What is abstract algebra? Explain group, ring, and field. Write properties of group, ring. and field.
+
+*Ans*. It is the branch of algebra dealing with the study of algebraic systems or algebraic structures with one or more mathematical operations associated with element from an identifiable pattern, differing from the usual 
+
+#### Group : 
+A group is a set / collection of strings along with one operation
+* Ex. ( G, . ) or ( G, + )
+This also has the following properties
+1. Closure : If & b ∈ S then ( a + b ) ∈ S
+2. Associativity : a + ( b + c ) = ( a + b ) + c ( grouping under the sign ) 
+3. Identity element : a + 0 = a
+4. Inverse element : a + ( -a ) = 0
+
+#### Ring : 
+Ring is a set or collection equipped with two binary operations 
+* Ex. ( G, +, x )
+This also has the following properties
+1. Closure ( +, x )
+2. Associativity ( +, x )
+3. Identity element
+4. Inverse element
+5. Commutativity : a + b = b + a ( switching under the sign )
+6. Distributive law : a( b + c ) = ab + ac
+
+#### Field : 
+It is a set / collection of objects  equipped with two binary operations : 
+> Main difference b/w field and ring is that that the nonzero elements form an abelian group under multiplication
+
+This also has the following properties
+1. Closure ( +, x ) 
+2.  Associativity ( +, x )
+3. Identity element ( +, x )
+4. Inverse element ( +, x )
+5. Commutativity ( +, x )
+6. Distributive law
+7. No zero divisors : If a, b ∈ S & ab = 0, then a = 0 or b = 0
+
+<hr>
+
+#### Q2 b. What is CFG context free grammar
+* Given CFG and Generate the string aabb of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{a, b}, P, S )
+Production rule:
+	* s = ab
+	* s = asb
+* Given CFG and generate the string
+0101010 of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
+Production rule: 
+	* s=0s0 
+	* s =1s1
+	* s = 0
+	* s = 1
+	* s = ∈
+* Given CFG and generate the string baab of given grammarCFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
+Production rule: 
+	* s = as 
+	* s = bs 
+	* s = a
+	* s = b
+
+*Ans* : 
+
+
+
+
+
+
+
+
+
 ## Shortnotes - 56 Page pdf 
 
 ## Theory of Automata :
@@ -368,12 +509,58 @@ graph LR
 	B--a-->B
 ```
 
-
-#### Q. What is Abstract Algebra. Explain the following concepts : Group , Ring, Field, and their properties
-
-*Ans*. It is the branch of algebra dealing with the study of algebraic systems or algebraic structures with one or more mathematical operations associated with element from an identifiable pattern, differing from the usual 
-
-* **Group** : A group is a set / collection of strings along with one operation
-	* Ex. ( G, . ) or ( G, + )
+<hr>
 
 
+#### Q. What is Machine Learning, what are the types of machine learning ? Draw the classification tree for types of machine learning.
+
+*Ans* 
+
+```mermaid
+flowchart TD
+A[Machine Learning] ----> B[Supervised] & C[Unsupervised] & D[Reinforcement]
+B----> E[Classicfication] & F[Regression] 
+C----> G[Clustering] & H[Association]
+E---->I[SVM : Support Vector Machine ]
+G--->L[GMM : Gaussian Mixture Model ] & M[K-Means]
+
+```
+
+
+#### Q. What are the types of SVM ? Draw the classification tree diagram and explain them with graphs. What is Hyper plane and support vector ?
+
+*Ans* Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning
+
+```mermaid
+flowchart TD 
+A[Support Vector Machine]--->B[ Linear SVM ] & C[Non-Linear SVM / Kernel]
+```
+#### Linear SVM
+
+
+**![](https://lh7-us.googleusercontent.com/P_o7HoYPGO8Gr1KxrLzIOn1VdMO36CkCNMbxrT538uG6XUK42Ies0x9lMhbT2mUOiK8ZOd7APmYJY-aaHJeZCumOmhCB5wgWdzroQ-9RK5e9r0NrVC0k4k5zAi1q7Aci-r2ZQ9q5UIIG1BDlkmkx8aU)**
+**![](https://lh7-us.googleusercontent.com/z6_-zU9R9LR9U_0gmZ9Es--N7XEPDCIfjHzirfWlcpbv2wcV4I3CKdUwmJQ5bjunYYOuR9Vj7fgQcOGA18Ck92WyBO46-KiUHy6gkBGyNqiO3HeFEQMQFcwXfLW7Xc8KjuUx7Qf6QV1jaX-oeXC83cI)**
+>  Negative Hyperplane in the image below
+**![](https://lh7-us.googleusercontent.com/z6_-zU9R9LR9U_0gmZ9Es--N7XEPDCIfjHzirfWlcpbv2wcV4I3CKdUwmJQ5bjunYYOuR9Vj7fgQcOGA18Ck92WyBO46-KiUHy6gkBGyNqiO3HeFEQMQFcwXfLW7Xc8KjuUx7Qf6QV1jaX-oeXC83cI)**
+
+| Symbol | Name | Meaning | 
+|--|--|--|
+| ---- |Hyperplane | Straight Line dividing two sets of datapoints|
+|*/x | Support Vectors | Data points from different sets, closest to the margins |
+| *-/-x | Margin | It is the distance between the support vector and the hyperplane }
+
+
+#### Non Linear SVM 
+
+**![](https://lh7-us.googleusercontent.com/xX63Wu2C77ye0H4dpRmuYmG8L0POa9FZYLmLLtuwYyb7ORFL2AoTfoJhIptR_2KRDGt2RckF0B_JHogfeWguO37KJfdHi9atRPBH2CqcN8OaWkMDyCAu5ogPKb-wRB57tUevX31_hq0yYVGtpuFqcQ4)**
+
+<hr>
+
+#### Q. What is GMM ? Explain with the help of graph
+
+
+
+
+
+
+   
