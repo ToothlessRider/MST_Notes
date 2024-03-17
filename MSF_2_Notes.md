@@ -34,7 +34,7 @@ A finite automata diagram is a visual representation of the following:
 #### Q1 b. Draw the transition diagram (graph) and write Transition table represent the DFA M =(Q, E, d, q<sub>0</sub>, F) i.e. M ={{q<sub>0</sub>, q<sub>1</sub>, q<sub>2</sub>},{0, 1}, d, q<sub>0</sub>, {q2}}  where d is transition function given by 
 | | |
 |--|--|
-|d(q<sub>0</sub>, 0) = q<sub>1</sub>, q<sub>1</sub>|d(q<sub>0</sub>, 1 ) = q<sub>1</sub>|
+|d(q<sub>0</sub>, 0) = q<sub>0</sub>, q<sub>1</sub>|d(q<sub>0</sub>, 1 ) = q<sub>1</sub>|
 |d(q<sub>1</sub>, 0) = q<sub>2</sub>|d(q<sub>1</sub>, 1 ) = q<sub>0</sub>|
 |d(q<sub>2</sub>, 0) = q<sub>2</sub>|d(q<sub>2</sub>, 1 ) = q<sub>1</sub>, q<sub>2</sub>|
 
@@ -115,32 +115,86 @@ This also has the following properties
 <hr>
 
 #### Q2 b. What is CFG context free grammar
-* Given CFG and Generate the string aabb of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{a, b}, P, S )
+#### Given CFG and Generate the string aabb of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{a, b}, P, S )
 Production rule:
 	* s = ab
 	* s = asb
-* Given CFG and generate the string
-0101010 of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
+
+*Ans* : 
+#### Part 1
+```mermaid
+flowchart TD
+	a[s]---b[a] & c[s] & d[b]
+	c---e[a] & f[b]
+```
+
+#### Given CFG and generate the string 0101010 of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
 Production rule: 
 	* s=0s0 
 	* s =1s1
 	* s = 0
 	* s = 1
 	* s = ∈
-* Given CFG and generate the string baab of given grammarCFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
+
+*Ans*.
+#### Part 2 
+
+```mermaid
+flowchart TD
+	a[s]---b[0] & c[s] & d[0]
+	c---e[1] & f[s] & g[1]
+	f---h[0] & i[s] & j[0]
+	i---k[1] 
+
+```
+
+#### Given CFG and generate the string baab of given grammarCFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
 Production rule: 
 	* s = as 
 	* s = bs 
 	* s = a
 	* s = b
 
-*Ans* : 
+*Ans*.
+
+#### Part 3
+```mermaid
+flowchart TD
+	a[s]---b[b] & c[s]
+	c---d[a] & e[s]
+	e---f[a] & g[s]
+	g---h[b]
+```
+
+<hr>
+
+#### Q3a. What is derivation tree or parse tree ? Also solve the following
+#### Generate the string p*q+r and draw the derivation tree given that production rule is: 
+* E=E+E
+* E=p/q/r
+#### Generate the string abbbb and draw the derivation tree given that the production rule is: 
+* s = axy
+* y = x
+* y = ∈
+* x = byb
+
+#### Generate the string aabbaa and draw the derivation tree given that the production rule is : 
+* s = aas
+* s = a
+* a = sba
+* a = ss
+* a = ba
+
+*Ans* 
 
 
 
 
+<hr>
 
+#### Q3 b. Write difference between DFA (deterministic finite automata) and NFA (nondeterministic Finite automata).
 
+*Ans* 
 
 
 
