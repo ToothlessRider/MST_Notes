@@ -112,11 +112,6 @@ Production rule:
 * S = aSb
 * S = ab
 
-*Ans* : 
-S --> aSb  put S --> ab
---> aabb
-Output string : aabb
-
 
 #### Given CFG and generate the string 0101010 of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
 Production rule: 
@@ -126,14 +121,6 @@ Production rule:
 * s = 1
 * s = ∈
 
-*Ans*.
-s-->0s0 put s-->1s1
--->01s10 put s --> 0s0
--->010s010 put s --> 1s1
---> 0101s1010 put s -->∈
--->0101010
-Output String : 0101010
-
 #### Given CFG and generate the string 'baab' of given grammarCFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
 Production rule: 
 * S = aS 
@@ -141,7 +128,43 @@ Production rule:
 * S = a
 * S = b
 
-*Ans*.
+
+*Ans* : 
+
+#### Context Free Grammar : 
+* It is a model to recognize languages
+* Aim is to recognize more languages
+* It can recognize all regular and some non-regular languages.
+
+It consists of the following : 
+* Terminals
+* Variables 
+* Substitution
+* Start Variable
+
+A context-free grammar is the tuple ( V, Σ, P, S), where
+- V is a finite set called *variables*,
+- Σ is a finite set disjoint from V called *terminals*,
+- P ⊆ V x {V U Σ }* is a finite set of production rules, and
+- S ∈ V is the *start variable*.
+
+
+> Part 1
+
+S --> aSb  put S --> ab
+--> aabb
+Output string : aabb
+
+> Part 2
+
+s-->0s0 put s-->1s1
+-->01s10 put s --> 0s0
+-->010s010 put s --> 1s1
+--> 0101s1010 put s -->∈
+-->0101010
+Output String : 0101010
+>Part 3
+
 S --> bS put S--> aS
 --> baS put S --> aS
 --> baaS put S --> b
@@ -494,63 +517,6 @@ Given Production rules :
 
 <hr>
 
-#### Q. The following are the regular expression ( Regular Expression ) draw their Finite Automata 
-
-*Ans*.
-
-1. Φ (Phi ) 
-```mermaid
-graph LR
-	A((q0))
-```
-
-2. ε ( Epsilon ) 
-```mermaid
-graph LR
-	A((qn))
-```
-> Should be a double circled node to signify end of regular expression
-
-3. a 
-```mermaid
-graph LR
-	A((q0))--a--> B((q1))
-```
-
-4. b
-```mermaid
-graph LR
-	A((q0))--b--> B((q1))
-```
-
-5. ab
-```mermaid
-graph LR
-	A((q0))--a-->B((q1))--b-->c((q2))
-```
-
-6. ( a + b )
-```mermaid
-graph LR
-	A((q0))--a-->B((q1))
-	A--b-->B
-```
-
-7. a*
-```mermaid
-graph LR
-	A((q0))
-	A--a-->A
-```
-
-8. a+
-```mermaid
-graph LR
-	A((q0))--a-->B((q1))
-	B--a-->B
-```
-<hr>
-
 
 #### Q. What is Machine Learning, what are the types of machine learning ? Draw the classification tree for types of machine learning.
 
@@ -562,6 +528,7 @@ graph LR
 #### Q. What are the types of SVM ? Draw the classification tree diagram and explain them with graphs. What is Hyper plane and support vector ?
 
 *Ans* Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning.
+* It works best on smaller datasets 
 
 **![](https://lh7-us.googleusercontent.com/Ffi0zBT773JE4O3jFSGQTlKRVFYOMPlXwpPilHW3E4LumhlkhHtOlwFu9sge6KwOa5mPquamI6srFaCnOoLUaldwTySBrbAtZKAYZS7avuTTpaqKz-Xnn4U87ko4wMrX_rr0C0lN5TLr1gr3pkFW1k0)**
 
