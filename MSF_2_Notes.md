@@ -180,14 +180,7 @@ Output String : baab
 * E=p/q/r
 
 *Ans* 
-```mermaid
-flowchart TD
-	a[E]---b[E] & c[*] & d[E]
-	b---e[p]
-	d---f[E] & g[+] & h[E]
-	f---i[q]
-	h---j[r]
-```
+**![](https://lh7-us.googleusercontent.com/9urfhj2CZJvRBa28YCE-wx1-HZtS7b7gMk-pVuWikkkUnIDraDn5VoTZLPNrPH7gFGmgihyW9M918UjojS1VzhHfz0Raon91ycOBdnOyoXixlyFPKYVwrdI0-sb3ONhOmGhWcC0ykMWRytkyAKvvyp4)**
 
 
 #### Generate the string abbbb and draw the derivation tree given that the production rule is: 
@@ -529,12 +522,15 @@ Given Production rules :
 
 *Ans* Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning.
 * It works best on smaller datasets 
+* Can be used for both regression and classification tasks but they work best for classification tasks
+
+In SVM we try to find a hyperplane that best separates the two classes.
 
 **![](https://lh7-us.googleusercontent.com/Ffi0zBT773JE4O3jFSGQTlKRVFYOMPlXwpPilHW3E4LumhlkhHtOlwFu9sge6KwOa5mPquamI6srFaCnOoLUaldwTySBrbAtZKAYZS7avuTTpaqKz-Xnn4U87ko4wMrX_rr0C0lN5TLr1gr3pkFW1k0)**
 
 #### Linear SVM
-
-
+When the data is perfectly linearly separable only then we can use Linear
+SVM.
 **![](https://lh7-us.googleusercontent.com/P_o7HoYPGO8Gr1KxrLzIOn1VdMO36CkCNMbxrT538uG6XUK42Ies0x9lMhbT2mUOiK8ZOd7APmYJY-aaHJeZCumOmhCB5wgWdzroQ-9RK5e9r0NrVC0k4k5zAi1q7Aci-r2ZQ9q5UIIG1BDlkmkx8aU)**
 **![](https://lh7-us.googleusercontent.com/z6_-zU9R9LR9U_0gmZ9Es--N7XEPDCIfjHzirfWlcpbv2wcV4I3CKdUwmJQ5bjunYYOuR9Vj7fgQcOGA18Ck92WyBO46-KiUHy6gkBGyNqiO3HeFEQMQFcwXfLW7Xc8KjuUx7Qf6QV1jaX-oeXC83cI)**
 >  Negative Hyperplane in the image below
@@ -548,14 +544,20 @@ Given Production rules :
 
 
 #### Non Linear SVM 
-
+When the data is not linearly separable then we can use Non-Linear SVM,
+which means when the data points cannot be separated into 2 classes by
+using a straight line
 **![](https://lh7-us.googleusercontent.com/xX63Wu2C77ye0H4dpRmuYmG8L0POa9FZYLmLLtuwYyb7ORFL2AoTfoJhIptR_2KRDGt2RckF0B_JHogfeWguO37KJfdHi9atRPBH2CqcN8OaWkMDyCAu5ogPKb-wRB57tUevX31_hq0yYVGtpuFqcQ4)**
+**Support Vectors**: These are the points that are closest to the hyperplane. A
+separating line will be defined with the help of these data points.
 
+**Margin**: it is the distance between the hyperplane and the observations
+closest to the hyperplane (support vectors).
 <hr>
 
 #### GMM 
 GMM is a probabalistic model for representing Gaussian Distribution ( Also known as normal distribution ) and is in a bell shaped curve. It requires statistic values such as mean, standard deviation and such parameters. 
-
+**![](https://lh7-us.googleusercontent.com/po40sfMnraZk4NOhftSZ_bT7TEpuZtqd3ahVyV-mq87azvqfecw5dm30M8inbmMM-_3uJb54CbE_hJ32447Yk_mkInjOZAJvEYdsbP4U1l4t2Dj-edZC68tfW_JqPvWxB3fgguZd8fqErYUUFW5CxIw)**
 **![](https://lh7-us.googleusercontent.com/rbAoqaB5OLamb6ElC9zBW_zJYwqdvEsnLZIUtak2y_5-kYuJ7D2TtcIvqTofskl3gmE8Ii3qL21ofYbpWj22e-bE1vaU2cEk9DvXiQRkhq2yVUbNsb5Cfg2brBKHvqGagbs-p3KFY5QqfyQmWgTODYY)**
 Where 
 u = mean
