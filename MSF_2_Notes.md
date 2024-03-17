@@ -28,7 +28,10 @@ A finite automata diagram is a visual representation of the following:
 **Start State**: Marked with a special arrow pointing towards it.
 **Accepting States**: Usually marked with double circles.
 
-**![](https://lh7-us.googleusercontent.com/SVYnbBlLfjkcuZFRLHocOCfJZRprS0Rw0KjbGfCWcVfel-xVXmRNLfrmLjozwyIlRspwaoCSpc3neq71fyQ45HH3JPFlUBB08-ibW3yy44PXkjtblFqSYC2UfA62a5a-F8aaK_DOzugmdNAZ_MstYyM)**
+**![](https://lh7-us.googleusercontent.com/pta7vwt5BrzDpmXdkmvj62Fq-kGpHUSyAnQ8w6_aIbpIl_BuQ2FpjPtSxV3xPZcLr4nsB3ri5Tsu1uOoYiZaMzoJiUazromog77oW2mah5ShptAp0aPWLz9x5UTLsFUpDVvRZbiu5zR5seGtS7gMTsA)**
+**Input tape**: It is a linear tape having some number of cells. Each input symbol is placed in each cell.
+**Finite control**: The finite control decides the next state on receiving particular input from input tape. The tape reader reads the cells one by one from left to right, and at a time only one input symbol is read.
+
 <hr>
 
 #### Q1 b. Draw the transition diagram (graph) and write Transition table represent the DFA M =(Q, E, d, q<sub>0</sub>, F) i.e. M ={{q<sub>0</sub>, q<sub>1</sub>, q<sub>2</sub>},{0, 1}, d, q<sub>0</sub>, {q2}}  where d is transition function given by 
@@ -177,23 +180,26 @@ flowchart TD
 
 
 #### Generate the string abbbb and draw the derivation tree given that the production rule is: 
-* s = axy
-* y = x
+* s = aXY
+* y = X
 * y = ∈
-* x = byb
+* x = bYb
 
 *Ans* 
 
 
 #### Generate the string aabbaa and draw the derivation tree given that the production rule is : 
-* s = aas
-* s = a
-* a = sba
-* a = ss
-* a = ba
+* S = aAS
+* S = a
+* A = SbA
+* A = SS
+* A = ba
 
 *Ans* 
-
+```mermaid
+flowchart TD 
+	
+```
 
 
 
@@ -705,7 +711,23 @@ A[Support Vector Machine]--->B[ Linear SVM ] & C[Non-Linear SVM / Kernel]
 
 <hr>
 
+#### GMM 
+GMM is a probabalistic model for representing Gaussian Distribution ( Also known as normal distribution ) and is in a bell shaped curve. It requires statistic values such as mean, standard deviation and such parameters. 
+
+**![](https://lh7-us.googleusercontent.com/rbAoqaB5OLamb6ElC9zBW_zJYwqdvEsnLZIUtak2y_5-kYuJ7D2TtcIvqTofskl3gmE8Ii3qL21ofYbpWj22e-bE1vaU2cEk9DvXiQRkhq2yVUbNsb5Cfg2brBKHvqGagbs-p3KFY5QqfyQmWgTODYY)**
+Where 
+u = mean
+σ = standard deviation
+ x = normal random variable
+
+While modeling human height data, it is typically modelled as a normal distribution for each gender with an approximate mean of : 
+5'10" for males and
+5'5" for females
 
 
 
-   
+
+#### Q Give the difference between DFA and NFA 
+
+*Ans*.
+**![](https://lh7-us.googleusercontent.com/9YnxehlqZDzB4DVEYFxcyrNEP540WELABzhB2BjNUhZr7ScQY7KOSM-MZU4YP7gY44bK4ohdLTA_2UTEDOcmwVOM57oX-umQcxmo-duWkT4dezwyM--f4wfZsi-fhSY4TSOTehz4J5HrmtvPDW7x_ZI)**
