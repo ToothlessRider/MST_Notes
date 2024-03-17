@@ -45,18 +45,7 @@ A finite automata diagram is a visual representation of the following:
 ### Transition Diagram
 
 
-```mermaid  
-graph LR
-A((q0)) -- 0 --> B((q1)) -- 0 --> C((q2))
-
-A -- 0 --> A
-A -- 1 --> B
-B -- 1 --> A
-C -- 1 --> B
-C -- 1 --> C
-C -- 0 --> C
-
-```
+**![](https://lh7-us.googleusercontent.com/xqcvfK339ET1H6Fu81dmiBXIwY7st9X6NITmzu2DEs5tny9FODTDNbmVczfNenoDM9nrnUPNIOuWEqGro-cI1J6ZGkOnhtAMwf86KoHHMbTMbylVLDDfpSqRA8BQeEMg0kpNiLYnEwd210Q7NYe4ub0)**
 
 
 ### Transition Table
@@ -118,56 +107,47 @@ This also has the following properties
 <hr>
 
 #### Q2 b. What is CFG context free grammar
-#### Given CFG and Generate the string aabb of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{a, b}, P, S )
+#### Given CFG and Generate the string 'aabb' of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{a, b}, P, S )
 Production rule:
-	* s = ab
-	* s = asb
+* S = aSb
+* S = ab
 
 *Ans* : 
-#### Part 1
-```mermaid
-flowchart TD
-	a[s]---b[a] & c[s] & d[b]
-	c---e[a] & f[b]
-```
+S --> aSb  put S --> ab
+--> aabb
+Output string : aabb
+
 
 #### Given CFG and generate the string 0101010 of given grammar CFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
 Production rule: 
-	* s=0s0 
-	* s =1s1
-	* s = 0
-	* s = 1
-	* s = ∈
+* s=0s0 
+* s =1s1
+* s = 0
+* s = 1
+* s = ∈
 
 *Ans*.
-#### Part 2 
+s-->0s0 put s-->1s1
+-->01s10 put s --> 0s0
+-->010s010 put s --> 1s1
+--> 0101s1010 put s -->∈
+-->0101010
+Output String : 0101010
 
-```mermaid
-flowchart TD
-	a[s]---b[0] & c[s] & d[0]
-	c---e[1] & f[s] & g[1]
-	f---h[0] & i[s] & j[0]
-	i---k[1] 
-
-```
-
-#### Given CFG and generate the string baab of given grammarCFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
+#### Given CFG and generate the string 'baab' of given grammarCFG = ( V, T, P, S ) CFG = ( {S}{0, 1}, P, S )
 Production rule: 
-	* s = as 
-	* s = bs 
-	* s = a
-	* s = b
+* S = aS 
+* S = bS
+* S = a
+* S = b
 
 *Ans*.
+S --> bS put S--> aS
+--> baS put S --> aS
+--> baaS put S --> b
+--> baab
+Output String : baab
 
-#### Part 3
-```mermaid
-flowchart TD
-	a[s]---b[b] & c[s]
-	c---d[a] & e[s]
-	e---f[a] & g[s]
-	g---h[b]
-```
 
 <hr>
 
@@ -177,6 +157,14 @@ flowchart TD
 * E=p/q/r
 
 *Ans* 
+```mermaid
+flowchart TD
+	a[E]---b[E] & c[*] & d[E]
+	b---e[p]
+	d---f[E] & g[+] & h[E]
+	f---i[q]
+	h---j[r]
+```
 
 
 #### Generate the string abbbb and draw the derivation tree given that the production rule is: 
@@ -186,6 +174,7 @@ flowchart TD
 * x = bYb
 
 *Ans* 
+**![](https://lh7-us.googleusercontent.com/FXt5QcriZqZg72FdjWuGwUn8Ah3duq6qyN-Kx1WLurKYbIPdqGdpqJSQwLtaiXu3H0J9QnSbmK2ijI81edYA43qMxB7oEoO4kX-2bUEpILNn7pDgKQpETPAptvhIhkIVl4ANI__9oqvaD2ZD4rvcQNY)**
 
 
 #### Generate the string aabbaa and draw the derivation tree given that the production rule is : 
@@ -196,19 +185,14 @@ flowchart TD
 * A = ba
 
 *Ans* 
-```mermaid
-flowchart TD 
-	
-```
-
-
+**![](https://lh7-us.googleusercontent.com/gAULndwgSmUeoez9Vaw37FscMQd3PgQfVxSF-Km7wHhXa7Tgs44FTqA03yp1sajftfk1fXLA8Zf0EeNxHuudxPA1yl20l395fPTMbPS61sFgKAdszjTZnSjSoMgXJYOwvJqHAXr5qdYG__r0k4zJRE0)**
 
 <hr>
 
 #### Q3 b. Write difference between DFA (deterministic finite automata) and NFA (nondeterministic Finite automata).
 
 *Ans* 
-
+**![](https://lh7-us.googleusercontent.com/9YnxehlqZDzB4DVEYFxcyrNEP540WELABzhB2BjNUhZr7ScQY7KOSM-MZU4YP7gY44bK4ohdLTA_2UTEDOcmwVOM57oX-umQcxmo-duWkT4dezwyM--f4wfZsi-fhSY4TSOTehz4J5HrmtvPDW7x_ZI)**
 
 <hr>
 
@@ -370,23 +354,14 @@ Ans.
 **Σ** = { 0,1 }
 L = { 00, 01, 10, 11 }
 
-```mermaid
-graph LR
-A((A)) -- 0,1  --> B((B)) -- 0,1 --> C((C)) -- 0, 1 --> D((D)) 
-D -- 0,1 --> D
-
-```
+**![](https://lh7-us.googleusercontent.com/72xvNZ41DhxMJcTmNdjzhSsfFjM_6wTKufKXxMglqiFeiPdkZgsAuuGvebqSihahpWts01_YcXzxjWBf89HsLAUhhtrr8copuU_pNBptgRCF-NY15jVN6xam1qH9m9qm2WfnBNLzU2a-m7PYl_RxqMo)**
 
 > D here is a dead / trap state
 
 # Non-Deterministic Finite Automata ~NFA~
 
 
-```mermaid
-graph LR
-A((A)) -- Link text --> B((B)) -- Link text --> C((C))
-
-```
+**![](https://lh7-us.googleusercontent.com/PEc02rO0aUFs1ydvl2LVJ160_8Xr1Jq_kCBTpLv59KM0KBxwAfBMyLAbiIaSQNX_tMMnKhM57geZdAqB3SFt0xrFHY4uyIGRpdR1DydI78h7xXGgZBTN4T73PGYaBQV_nMBbP6HvJ6xEOf1w41rXICE)**
 
 
 <hr>
@@ -400,18 +375,7 @@ Ans.
 ### Transition Diagram
 
 
-```mermaid  
-graph LR
-A((q0)) -- 1 --> B((q1)) -- 0 --> C((q2)) -- 1 --> D((q3))
-
-A -- 0 --> A
-B -- 0 --> B
-B -- 1 --> C
-C -- 0 --> B
-D -- 0 --> C
-D -- 1 --> C
-
-```
+**![](https://lh7-us.googleusercontent.com/j7V3v-XvWMQh7QSVQicGI3DIfUxkZqyqsyTdlkeZpdJjLZgZjLDeU01AylWf4uzxTUKjqKqg6UHUFnzAjOE4XPbhmwlAOjsbgnQar0-wL_JRU4DGRJTafaLmJTYvLwQzbqlOu4NFZhda4TsoLZmX-ok)**
 
 
 ### Transition Table
@@ -432,15 +396,7 @@ Ans.
 ### Transition Diagram
 
 
-```mermaid
-graph LR
-A((q0)) -- 0 --> B((q1)) -- 1 --> C((q2))
-
-A -- 1 --> C
-B -- 0 --> A
-C -- 0,1 --> C
-
-```
+**![](https://lh7-us.googleusercontent.com/Y-d_6VoIc8uneu1BoL-TPfDbjUAVy70YnL89fcNKuvaPOG3kfQ8ur2yFyMpT1WVszJNLLzaF69Wlbj-NydDxeQOQ4suPYseqJyLwDdIpp-OUEOyPq3l5Ai0-njyaG-rfhCRNoF2PdtmtPj4JvS82T68)**
 
 
 ### Transition Table
@@ -459,15 +415,7 @@ Ans.
 ### Transition Diagram
 
 
-```mermaid
-graph LR
-A((q0)) -- 1 --> B((q1)) -- 0 --> C((q2))
-
-A -- 0 --> A
-B -- 1 --> B
-C -- 0,1 --> C
-
-```
+**![](https://lh7-us.googleusercontent.com/ExAXUoPd0EM0u6woi1APWhZdw4QJWSysMy7pswUbw-tQy3k0X_mml3H9Bd-e4EZgPcV1Tfb035JlNMh4ZcoCZjDWa-dh89ZOksIVB6qz3F1OOq-S8XOHJhWJAUOYNt-2oQ5lxykY4zsR90tUX4iBBfc)**
 
 
 ### Transition Table
@@ -486,15 +434,7 @@ Ans.
 ### Transition Diagram
 
 
-```mermaid
-graph LR
-A((q1)) -- 0 --> B((q0)) -- 1 --> C((q2))
-
-B -- 0 --> B
-A -- 1 --> C
-C -- 0,1 --> C
-
-```
+**![](https://lh7-us.googleusercontent.com/mnt1NqT8jHnMKPrulOJei4ybpj6QHf1WYRtgLVrb6I18PpM_XVXYEuUoNefe_zDQTHktBCGu97Wbmg4wFIP2ZRKAOfn8wWC_80JWMmItBoJLtsVfvWy4Jyo6PbgL8Jod6tY6FGGm8DUrRI2gdLG3NXU)**
 
 
 ### Transition Table
@@ -517,20 +457,7 @@ Given Production rules :
 3. E = a/b/c
 
 *Ans*.
-```mermaid
-flowchart TD
-	A[E] --> B[E];
-	A --> C[+];
-	A --> D[E];
-	B --> E[E];
-	E --> F[E];
-	E --> G[*];
-	E --> H[E];
-	F --> I[a];
-	H --> J[b];
-	D --> K[c]
-```
-
+**![](https://lh7-us.googleusercontent.com/v0fibVpNCoLPXetvafNpYtr5a7hv91A5YGd_lNu6_qsoRABAwQxgE5RvT225-q8bgFSmIBwDGhNHg6AoEljgOTnglPv5p_i4_M_nAqTzkxuenU6CM7uOka6Csna6UCRDZMaLUMX8hrXeVyoYVkEuqtU)**
 <hr>
 
 #### Ex 2.Generate string bbabb or bab & draw the derivation tree. 
@@ -541,17 +468,7 @@ Given Production rules :
 
 *Ans*.
 
-```mermaid
-flowchart TD
-	A[s] ---B[b]
-	A ---C[s]
-	A ---D[b]
-	C ---E[b]
-	C ---F[s]
-	C ---G[b]
-	F ---H[a]
-
-```
+**![](https://lh7-us.googleusercontent.com/wwKTWYMQzsl97Q9Fb4Zm6bxgCqj5VPr0bVWYROAEx-pCgcPI8Ay7ff9bGPGDz3qIqOiYjrJjgRlCFy0zDhTY5a5HSu0Ay15mdVAN1ys68lvftHhrmXjB9xjjFLyCEweESCBfRG3n338iqFQWn6rNkRY)**
 
 <hr>
 
@@ -563,24 +480,7 @@ Given Production rules :
 
 *Ans*.
 
-```mermaid
-flowchart TD
-	A[s]---B[a]
-	A---C[b]
-	C---D[a]
-	C---E[b]
-	C---F[b]
-	F---G[b]
-	F---H[s]
-	H---I[a]
-	H---J[b]
-	J---K[b]
-	J---L[s]
-	L---M[b]
-	L---N[a]
-	
-
-```
+**![](https://lh7-us.googleusercontent.com/khfllUAKYZqoDsgf5EOPW6xH_ZSNBFaeIvnkQ7RAn8uNeVpwTN2r1cMTEuSStC036Af2Bm1YrHj0UFDsoBHBY-d-9hLBG1Y_QzukSjV1zd1K9KMTvJQo2hRLkZbNvKpmkI7lPMBUG9NAqRC4xcZK2OM)**
 
 #### Ex 4.Generate string aabbbb & draw the derivation tree.  
 Given Production rules :
@@ -590,22 +490,7 @@ Given Production rules :
 
 *Ans*.
 
-```mermaid
-flowchart TD
-	a[s]---b[a]
-	a---c[b]
-	c---d[s]
-	c---e[b]
-	d---f[a]
-	d---g[b]
-	g---h[s]
-	g---i[b]
-	h---j[ε]
-	i---k[s]
-	i---l[b]
-	k---m[ε]
-	
-```
+**![](https://lh7-us.googleusercontent.com/hs1nOgYURodMmW5vT--04G1PbTYhsBXQnHcRCvYob1rVmRxQraOiv5mwQj-jVI7k_zquPA5KYhfX3Juu5n30I0jjpEKeL1q-77vZKienX4s5UQqlpVaLWmg5puZ8d-cysQoX0NPTskZFEu6LtWWoq_E)**
 
 <hr>
 
@@ -671,25 +556,15 @@ graph LR
 
 *Ans* 
 
-```mermaid
-flowchart TD
-A[Machine Learning] ----> B[Supervised] & C[Unsupervised] & D[Reinforcement]
-B----> E[Classicfication] & F[Regression] 
-C----> G[Clustering] & H[Association]
-E---->I[SVM : Support Vector Machine ]
-G--->L[GMM : Gaussian Mixture Model ] & M[K-Means]
-
-```
+**![](https://lh7-us.googleusercontent.com/cAiHLrCGN60cgVcHKEaAWPCUaMqyMTpFQ-EqoijA512lFDSBIkwJjjzjDz9JQjPDmw6YfQeMx0GX4sjw6nkZYg2keBPk2lGCNNBwDyJfjHhSQbHz8U3ILUkdzHrdxGxDKKQtp93BBC2p3MlkDW-1Sfg)**
 
 
 #### Q. What are the types of SVM ? Draw the classification tree diagram and explain them with graphs. What is Hyper plane and support vector ?
 
 *Ans* Support Vector Machine [SVM] Is a form of classification in *Supervised* machine learning.
 
-```mermaid
-flowchart TD 
-A[Support Vector Machine]--->B[ Linear SVM ] & C[Non-Linear SVM / Kernel]
-```
+**![](https://lh7-us.googleusercontent.com/Ffi0zBT773JE4O3jFSGQTlKRVFYOMPlXwpPilHW3E4LumhlkhHtOlwFu9sge6KwOa5mPquamI6srFaCnOoLUaldwTySBrbAtZKAYZS7avuTTpaqKz-Xnn4U87ko4wMrX_rr0C0lN5TLr1gr3pkFW1k0)**
+
 #### Linear SVM
 
 
@@ -726,8 +601,3 @@ While modeling human height data, it is typically modelled as a normal distribut
 
 
 
-
-#### Q Give the difference between DFA and NFA 
-
-*Ans*.
-**![](https://lh7-us.googleusercontent.com/9YnxehlqZDzB4DVEYFxcyrNEP540WELABzhB2BjNUhZr7ScQY7KOSM-MZU4YP7gY44bK4ohdLTA_2UTEDOcmwVOM57oX-umQcxmo-duWkT4dezwyM--f4wfZsi-fhSY4TSOTehz4J5HrmtvPDW7x_ZI)**
