@@ -181,5 +181,108 @@ Advanced datasets and advanced applications :
 * *Multidimensional Concept Description*: 
 	* To describe whatever has multiple dimensions, i.e. to generalize, summarize and categorize data characteristics
 	* Ex. Dry vs Wet regions
-* 
+* *Frequent patterns, associations, correlations vs causality*.
+* *Classification and prediction*
+	* Construct models that decribe classes for future prediction
+	* Predict unknown or missing values 
+* Cluster analysis
+	* Class label is unknown: Group data to form new classes, e.g., cluster houses to find distribution patterns 
+	* Maximizing intra-class similarity & minimizing interclass similarity
+* Outlier analysis
+	* Outlier: Data object that does not comply with the general behavior of the data 
+	* Noise or exception? Useful in fraud detection, rare events analysis
+* Trend and evolution analysis
+	* Trend and deviation: e.g., regression analysis
+	* Sequential pattern mining: e.g., digital camera -Y large SD memory
+	* Periodicity analysis
+	* Similarity-based analysis
+* Other pattern-directed or statistical analyses
 
+<hr>
+
+**Q7. What are the Major issues in Data Mining ? **
+
+*Ans*. 
+* Mining methodology
+	* Mining different kinds of knowledge from diverse data types, e.g., bio, stream, Web
+	* Performance: efficiency, effectiveness, and scalability
+	* Pattern evaluation: the interestingness problem 
+	* Incorporation of background knowledge
+	* Handling noise and incomplete data
+	* parallel, distributed and incremental mining methods
+	* Integration of the discovered knowledge with existing one: knowledge fusion
+* User interaction
+	* Data mining query languages and ad-hoc mining
+	* Expression and visualization of data mining results
+	* Interactive mining of knowledge at multiple levels of abstraction
+* Applications and social impacts
+	* Domain-specific data mining & invisible data mining
+	* Protection of data security, inegrity and privacy
+
+<hr>
+**![](https://lh7-us.googleusercontent.com/ZLJdJs_9qqU4ScCQy2hg9tdwrfOUz7QJOf7APUBgerKWm3mGnU0tDovzFlpeWZCx4YgMwk7AksLoVOOrOEo_jwnea-dTG-4Ue0ETv6Lmz0JKILkXatV33HOUVihFdAA19z8rdeHLguRnC9d22-1ud8w)**
+
+<hr>
+**Q8. **
+
+
+**Q9. What is Classification ? What are the different tasks that take place in classification ?What are the different classification techniques **
+
+*Ans*. **Classification** is a supervised learning technique in machine learning and data mining. It involves categorizing input data into classes or categories based on its characteristics or features. The goal is to develop a model that can accurately predict the class labels of new, unseen instances.
+
+* Given a collection of records ( training set ) 
+* Find a model for class attribute as a function of the values of other attributes
+* Previously unseen records should be assigned a class as accurately as possible based on the training set.
+**![](https://lh7-us.googleusercontent.com/SWf-iH76v7x_K9KbHJjF-Y5krXsPjBVDNmlT75YhmFh-jRA757oNjWgIoh_PsGkbePLCYBGHWYYClBPp03kvGneoGMi8MFJE2SJOFYaGAG0M1vsyGYc3kVq3aw25txdL6yN5SQarc_NKMx3yqUt6E7k)**
+
+Classification Techniques
+* Decision Tree based Methods
+* Rule-based Methods
+* Memory based reasoning
+* Neural Networks
+* Naive Bayes and Bayesian Belief Networks
+* Support Vector Machines
+
+<hr>
+
+**Q10. Differentiate between Supervised and Unsupervised Learning**
+
+*Ans*. Supervised vs. Unsupervised
+Learning
+**Supervised learning (classification)**
+* Supervision: The training data (observations, measurements, etc.) are accompanied by labels indicating the class of the observations
+* New data is classified based on the training set
+
+**Unsupervised learning (clustering)**
+* The class labels of training data is unknown
+* Given a set of measurements, observations, etc. withnthe aim of establishing the existence of classes or clusters in the data
+
+<hr>
+
+**Q11. What are the different issues faced regarding classification and prediction ? **
+
+*Ans*. 
+1. *Data Preparation* : 
+* Data cleaning
+	* Preprocess data in order to reduce noise and handle missing values
+* Relevance analysis (feature selection)
+	* Remove the irrelevant or redundant attributes
+* Data transformation
+	* Generalize and/or normalize data
+		* Numerical attribute income categorical {low,medium,high} 
+		* Normalize all numerical attributes to [O, 1)
+
+2. *Evaluating Classification Methods* :
+* Predictive accuracy
+* Speed
+	* Time to construct the model
+	* time to use the model
+* Robustness
+	* Handling noise and missing values
+* Scalability
+	* Efficiency in disk-resident databases
+* Interpretability:
+	* Understanding and insight provided by the model
+* Goodness of rules (quality)
+	* Decision tree size
+	* Compactness of classification rules
