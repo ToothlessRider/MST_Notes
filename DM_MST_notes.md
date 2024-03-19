@@ -15,79 +15,6 @@
 2.  Data Integration
 3. Regression
 
-
-<hr>
-
-#### Q1 b. Differentiate between
-a) Knowledge discovery and data mining
-b) Nominal and ordinal Attributes
-c) OLAPand OLTP
-
-*Ans*
-
-
-#### Q1 C. Suppose that our goal is to calculate the similarity of the two documents given below.
->Document I = 'the best data science course'
-Document 2 = 'data science is popular'
-Compute the similarity using cosine and jaquards' measures
-
-*Ans*
-
-
-<hr> 
-
-#### Q2 a.The dataset below contains categorical descriptions of samples corresponding to 10 samples of grilled mushroom. Each mushroom is classified as poisonous?={yes,no}
-**![](https://lh7-us.googleusercontent.com/n0QO0jrvUYFM2sd6np-vV1BTX_Z4vYf-MYRoooA5x1ttlMSYPJJvJWBV4t3J1AMsWFwoRHe2-NK4pMiFfG7qFXrYX53V4_4dTw0OpPkyEQXssmTrGLgVzPc-AISU7upNdippl5mOA18kOUylmLTcXqg)**
-* Construct the contingency table of conditional an prior class probabilities  that would be used by Naive Bayes classifier to build the classifier for the dataset above.
-* Based on the contingency table, use Naive Bayes to estimate the likelihood
-that the following mushroom is poisonous. Show your calculations.
-
-*Ans* 
-
-
-<hr>
-
-#### Q2 b.Given four objects represented by the tuples (28, 5, 46, 15), (l5, 25, 3, 12). Compute the Euclidean, Manhattan, Minkowski (p=3) distance between the objects.
-*Ans*
-
-
-<hr>
-
-#### Q3 a. Suppose that the data for analysis includes the attribute age. The age values for the data tuples are (in increasing order) : 12, 26, 69, 72.
-* Use min-max normalization to transform the values for age onto the
-range [0. I]
-* Use Z-Score normalization to transform the values for age
-
-*Ans*
-
-<hr>
-
-#### Q3 b.The confusion matrix below summarizes the perfo ances of a binary classifier applied to dataset of an example labels  which are annoted by two labels ( Yes, No )
-|--| Yes|No|
-|--|--|--|
-|Yes|32|46|
-|No|65|122|
-
-Based on the matrix, calculate : 
-	a) F score 
-	b) Accuracy 
-	c) Precision 
-	d) Recall
-
-*Ans*
-
-<hr>
-
-#### Q4 a. Define data integration. Why is it needed? Discuss the various issues associated with data integration
-
-*Ans*
-
-<hr>
-
-#### Q4 b.Explain the major tasks in data preprocessing
-
-*Ans*
-
 <hr>
 
 ## Exam Questions
@@ -124,6 +51,129 @@ Data mining is used for the following purposes :
 
 <hr>
 
+**Q. What is data ? Define types of attributes and their properties ?**
+
+*Ans*. Data is basically a collection of data objects and their attributes.
+* An attribute is a property or characteristic of an object.
+	* It is also known as *variable, field, characteristic or feature*
+	* Ex : eye color of a person, temperature, etc
+* A collection of attributes describe an object.
+	* An obejct is also known as a record, sample or entity.
+
+There are mainly 4 types of attributes : __NOIR__
+* Nominal ( 1 ) : 
+	* Simplest level and are categories with no ranking or order.
+	* Ex : Id numbers, zip codes, etc
+* Ordinal ( 1 & 2) : 
+	* They can be arranged in meaningful order
+	* Ex : rankings ( scale of 1 to 10 )
+* Interval : ( 1, 2 & 3 ) : 
+	* Ordered categories and meaningful differences between values
+	* Ex : calendar dates, temp in *C or farenheit
+* Ratio : ( 1, 2, 3 & 4 ) : 
+	* Highest level of measurement, with both differences and ratios being meaningful
+	* Ex : Length, time, counts, etc
+
+These attributes can possess the following properties > 
+1. Distinctiveness
+2. Order
+3. Addition 
+4. Multiplication
+
+Attributes can be of 2 types : 
+Discrete Attribute
+* Has a finite or countably infinite set of values
+* Often represented as integer variables'
+
+Continuous Attribute
+* Has real numbers as attribute values
+* Can only be measured and represented using a finite set of digits.
+* Represented as floating point variables
+
+<hr>
+
+**Q. What are the different types of Datasets ? **
+
+*Ans*. There are mainly 3 types of datasets : __ROG__
+* *Record*
+Data organized in rows or records, where each record represents an individual entity
+	* Data matrix
+	* Document data
+	* Transaction data
+* *Ordered*
+Data arranged in a specific sequence or order, often with a defined relationship between consecutive elements
+	* Spatial Data
+	* Temporal Data
+	* Sequential Data
+	* Genetic Sequence Data
+* *Graph*
+Data structured as a graph consisting of nodes (entities) and edges ( relationships between them )
+	* WWW
+	* Molecular Structures
+
+<hr>
+
+**Q. What is Data Quality?**
+
+*Ans*. Data quality is  a measure of how suitable data is for the purpose of data mining.	
+To get data of good quality from databases we need to look at the following questions : 
+* What kinds of data quality problems are there?
+* How do we detect problems with the data ?
+* What can we go about these problems ?
+
+Some of the data quality problems are as follows : 
+1. Noise
+**![](https://lh7-us.googleusercontent.com/kMLO2ZBODA6eilewvzUEDODwY_auoBIV8_mJBaHVFM_yF4z70SlaJtCUtAwZkfnvnehIy9AOqG6dcgd4m4n8uh0Jq560nYaIOH_puks0LhM0EWgO9EoHMxxydISPEzO0rsZFt-IsGXUujAZ1oAolknM)**
+* This refers to the modification of the original values.
+
+2. Outliers 
+**![](https://lh7-us.googleusercontent.com/ix2j-r7koJSig0lu59AFdnfkNqucelFAICIUCsADT46GBKTatlAd_ukki4o1PpThnJ4AKMCWD3dDlgyx_3lM0AsFSuTycznaFNMKVWSE9168IAN-1u-2gNdR9ZNG6xXJf4YHl-PcJsvFu1pJUPU90e4)**
+* There are data objects with characteristics that are *considerably* different from most of the other data objects in the data set
+
+3. Missing Values : 
+* Reasons for missing values : 
+	* Information isn't collected
+	* Attributes may not be applicable to all cases
+* Handling Missing Values : 
+	* Eliminate Data Objects
+	* Eliminate missing values
+	* Ignore the missing values during analysis
+	* Fill the missing attributes with the most probable values.
+
+4. Duplicate Data
+* Data set may include objects that are duplicates or extremely close to being identical
+	* Major issues arise when merging data from heterogeneous sources.
+
+<hr>
+
+**Q.What is Data Preprocessing ?**
+
+*Ans* Data preprocessing is a critical step in data analysis and machine learning workflows. It involves cleaning, transforming, and organizing raw data into a format suitable for analysis or modeling.
+__ASDFFDA__
+
+* Aggregation : 
+	* Combining two or more attributes into a single attribute.
+	* Done for data reduction and to get more stable data
+* Sampling : 
+	* Selecting a subset of datapoints from the larger dataset 
+	* Done because using the entire dataset would be too expensive and time consume
+		* Simple random sampling
+		* Sampling without replacement
+		* Sampling with replacement
+		* Stratified sampling
+* Dimensionality Reduction : 
+	* Reducing the number of variables in the dataset
+	* This can be done with the help of PCA, Singular value decomposition ( SVD ), etc
+* Feature subset selection
+* Feature creation
+* Discretization and binarization : 
+	* Converting continuous variables into discrete variables.
+* Attribute transformation
+
+
+
+
+<hr>
 The Process of knowledge discovery in data mining follows the given set of steps :
 
 **![](https://lh7-us.googleusercontent.com/1PeOBbWmnK-eLkeRZj2eBh3Sn2UHFd3af9Orgrv26plnQ8XZlu72C2qtP3R282c_ftzcPyFLkxZ3k_JuENOiZRmWI04AhFqIpth2BPknE-0BgJCRL_1zoRMzStBJ-3a7zv6h2btzzcERgtP2Csispio)**
@@ -286,3 +336,7 @@ Learning
 * Goodness of rules (quality)
 	* Decision tree size
 	* Compactness of classification rules
+
+<hr>
+
+**Q12. **
