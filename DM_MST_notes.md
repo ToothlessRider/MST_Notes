@@ -92,10 +92,13 @@ Based on the matrix, calculate :
 
 ## Exam Questions
 
-**Q1. What is Data Mining ? Give some  uses of data mining and examples of data mining applications **
+**Q1. What is Data Mining and why do we do it ? Give some  uses of data mining and examples of data mining applications **
 *Ans* 
-* It is the efficient discovery of previous *unknown*, *potentially useful* patterns within large datasets
+* It is the efficient discovery of *non-trivial*, *implicit*,*previously-unknown*, *potentially useful* patterns within large datasets
 * The analysis of observational datasets to find unsuspected relationships and to summarize the data in new ways, that are understandable and useful.
+
+We're doing data mining, because we have an abundance of data but we're starving for knowledge / information.
+Sources : Businesses, science, society
 
 **General Terms** : 
 * *Data* : A set of __facts__ stored in a database.
@@ -127,10 +130,56 @@ The Process of knowledge discovery in data mining follows the given set of steps
 
 <hr>
 
-**Q2.   What are the different data mining tasks?**
+**Q2.   What are the different data mining tasks? Note the difference data mining methods**
 *Ans*. The difference data mining tasks are as follow : 
-* __Classification __: Leaning a function that maps an item into a set of predefined classes.
+* __Classification__  : Leaning a function that maps an item into a set of predefined classes.
 * __Regression__ : Learning a function that maps an item to a real value.
 * __Clustering__ : Identify a set of groups of similar items .
 * __Dependency and Associations__ : Identify any *significant dependencies* between data *attributes*.
-* __Summarization__ : 
+* __Summarization__ : To find a compact decription of the dataset.
+
+<hr>
+
+**Q3. Why not traditional data analysis ?**
+*Ans* The use of traditional data analysis techniques has been reduced for the following reasonss : 
+* Tremendous amounts of data 
+	* Algorithms must be scalable so as to handle tera-butes of data
+* High dimensionality 
+	* A singular micro array may have tens of thousands of dimensions
+* HIgh complexity of data
+* New and sophisticated applications
+
+<hr>
+
+**Q4. What is data preprocessing ?  **
+
+*Ans*. 
+
+<hr>
+
+**Q5. On what kinds of applications can you do data mining ?**
+
+*Ans* Database oriented data sets and applications
+* Relational Databases. data warehouses, transactional databases
+
+Advanced datasets and advanced applications : 
+* Data streams and sensor data
+* Time series data, temporal data and sequence data
+* Structure data, graphs, social networks, etc
+* Object-relational databases
+* Legacy databases
+* Multimedia databases
+* Text Databases
+* Audio Databases, etc
+* WWW
+
+<hr> 
+
+**Q6. What are the different Data Mining Functionalities ?**
+
+*Ans* There are 7 basic functionalities of Data Mining : 
+* *Multidimensional Concept Description*: 
+	* To describe whatever has multiple dimensions, i.e. to generalize, summarize and categorize data characteristics
+	* Ex. Dry vs Wet regions
+* 
+
