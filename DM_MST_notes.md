@@ -168,10 +168,34 @@ __ASDFFDA__
 * Feature creation
 * Discretization and binarization : 
 	* Converting continuous variables into discrete variables.
-* Attribute transformation
+* Attribute transformation : 
+	* Transforming the scale, distribution or nature of the attributes.
+	* This can be done with the help of normalization, standardization, logarithmic transformation, etc
 
+<hr>
 
+**Q. What is association rule mining ? What is a frequent itemset ? Define the different association rule mining tasks**
+*Ans*. 
+Given a set of transactions, finding the rules that will predict the occurence of an item based on the occurences of other items is called association rule mining.
+**![](https://lh7-us.googleusercontent.com/8h9A3gq2Hk2g4mAuZu2kruf-CMw1bi4vGh5AxMhFAo17ptIIS_jf4XX5mV6NI3x7zLn7lG22LyWEofzEFKaET9V7qeAimrS4zzW2i_jg2Lv-pRYMCGdvyWGpVn-CwN5aYJZXi3uMp4PVoxPOX5Qws5s)**
+Example of Association Rules
+{Diaper} —> {Beer},
+{Milk, Bread} —>{Eggs,Coke},
+{Beer, Bread} —>{Milk}
 
+**Frequent Itemset** : __ISSFAR__
+* Itemset : 
+	* It is a collection of one or more items
+* Support Count :
+	* Frequency of occurence in an itemset
+* Support :
+	* Fraction of transactions that contain an itemset
+* Frequent Itemset :
+	* An itemset whose support is greater than or equal to a minsup threshold
+* Association Rule : 
+	* An expression of the form X --> Y where X and Y are itemsets.
+* Rule evaluation metrics : 
+* 
 
 <hr>
 The Process of knowledge discovery in data mining follows the given set of steps :
@@ -180,7 +204,7 @@ The Process of knowledge discovery in data mining follows the given set of steps
 
 <hr>
 
-**Q2.   What are the different data mining tasks? Note the difference data mining methods**
+**Q.   What are the different data mining tasks? Note the difference data mining methods**
 *Ans*. The difference data mining tasks are as follow : 
 * __Classification__  : Leaning a function that maps an item into a set of predefined classes.
 * __Regression__ : Learning a function that maps an item to a real value.
@@ -190,7 +214,7 @@ The Process of knowledge discovery in data mining follows the given set of steps
 
 <hr>
 
-**Q3. Why not traditional data analysis ?**
+**Q. Why not traditional data analysis ?**
 *Ans* The use of traditional data analysis techniques has been reduced for the following reasonss : 
 * Tremendous amounts of data 
 	* Algorithms must be scalable so as to handle tera-butes of data
@@ -201,13 +225,7 @@ The Process of knowledge discovery in data mining follows the given set of steps
 
 <hr>
 
-**Q4. What is data preprocessing ?  **
-
-*Ans*. 
-
-<hr>
-
-**Q5. On what kinds of applications can you do data mining ?**
+**Q. On what kinds of applications can you do data mining ?**
 
 *Ans* Database oriented data sets and applications
 * Relational Databases. data warehouses, transactional databases
@@ -225,7 +243,7 @@ Advanced datasets and advanced applications :
 
 <hr> 
 
-**Q6. What are the different Data Mining Functionalities ?**
+**Q. What are the different Data Mining Functionalities ?**
 
 *Ans* There are 7 basic functionalities of Data Mining : 
 * *Multidimensional Concept Description*: 
@@ -250,7 +268,7 @@ Advanced datasets and advanced applications :
 
 <hr>
 
-**Q7. What are the Major issues in Data Mining ? **
+**Q. What are the Major issues in Data Mining ?**
 
 *Ans*. 
 * Mining methodology
@@ -273,10 +291,9 @@ Advanced datasets and advanced applications :
 **![](https://lh7-us.googleusercontent.com/ZLJdJs_9qqU4ScCQy2hg9tdwrfOUz7QJOf7APUBgerKWm3mGnU0tDovzFlpeWZCx4YgMwk7AksLoVOOrOEo_jwnea-dTG-4Ue0ETv6Lmz0JKILkXatV33HOUVihFdAA19z8rdeHLguRnC9d22-1ud8w)**
 
 <hr>
-**Q8. **
 
 
-**Q9. What is Classification ? What are the different tasks that take place in classification ?What are the different classification techniques **
+**Q. What is Classification ? What are the different tasks that take place in classification ? What are the different classification techniques**
 
 *Ans*. **Classification** is a supervised learning technique in machine learning and data mining. It involves categorizing input data into classes or categories based on its characteristics or features. The goal is to develop a model that can accurately predict the class labels of new, unseen instances.
 
@@ -295,7 +312,7 @@ Classification Techniques
 
 <hr>
 
-**Q10. Differentiate between Supervised and Unsupervised Learning**
+**Q. Differentiate between Supervised and Unsupervised Learning**
 
 *Ans*. Supervised vs. Unsupervised
 Learning
@@ -309,7 +326,7 @@ Learning
 
 <hr>
 
-**Q11. What are the different issues faced regarding classification and prediction ? **
+**Q. What are the different issues faced regarding classification and prediction ?**
 
 *Ans*. 
 1. *Data Preparation* : 
@@ -339,4 +356,12 @@ Learning
 
 <hr>
 
-**Q12. **
+**Q12. What are decision trees ? **
+
+*Ans*. Decision trees are used to represent learned target functions
+- Each internal node tests an attribute
+- Each branch corresponds to attribute value
+- Each leaf node assigns a classification
+- Can be represented by logical formulas
+
+**![](https://lh7-us.googleusercontent.com/doJPcVzHEIRWnLsXJ08x1K2X7GWPFGBlB0IC8sVbbuqtvgNC-v7sa3gOrfX-BqdkCcfCxMcrapqSEuQqGY7Pv69bTGoTNW9AASpAdILRJdHF_ufrlBqDWtAnDqXmxrp0xDLjjFu9-rhBNc46kDrsU4o)**
