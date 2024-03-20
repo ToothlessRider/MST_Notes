@@ -323,8 +323,7 @@ Advanced datasets and advanced applications :
 	* Domain-specific data mining & invisible data mining
 	* Protection of data security, inegrity and privacy
 
-<hr>
-**![](https://lh7-us.googleusercontent.com/ZLJdJs_9qqU4ScCQy2hg9tdwrfOUz7QJOf7APUBgerKWm3mGnU0tDovzFlpeWZCx4YgMwk7AksLoVOOrOEo_jwnea-dTG-4Ue0ETv6Lmz0JKILkXatV33HOUVihFdAA19z8rdeHLguRnC9d22-1ud8w)**
+**![](https://lh7-us.googleusercontent.com/MqoMkeXOG0qegkDjw5qhbF6fM4WozwKSM-ZIytvArZdinzaGYV_jQNCkTmEb91TPzQoTrU_tghE0DW8p5zqPgDPkO1-iT_6pybB0jtOrVnuC_BboqE4hpXOLJs8SbavTrFxQm0T1ycQJ6y1HsdelHvw)**
 
 <hr>
 
