@@ -19,7 +19,7 @@
 
 ## Exam Questions
 
-**Q1. What is Data Mining and why do we do it ? Give some  uses of data mining and examples of data mining applications **
+**Q1. What is Data Mining and why do we do it ? Give some  uses of data mining and examples of data mining applications**
 *Ans* 
 * It is the efficient discovery of *non-trivial*, *implicit*,*previously-unknown*, *potentially useful* patterns within large datasets
 * The analysis of observational datasets to find unsuspected relationships and to summarize the data in new ways, that are understandable and useful.
@@ -92,7 +92,7 @@ Continuous Attribute
 
 <hr>
 
-**Q. What are the different types of Datasets ? **
+**Q. What are the different types of Datasets ?**
 
 *Ans*. There are mainly 3 types of datasets : __ROG__
 * *Record*
@@ -198,8 +198,38 @@ Example of Association Rules
 * 
 
 <hr>
-The Process of knowledge discovery in data mining follows the given set of steps :
 
+**Q. What are the steps taken in the process of KDD?**
+*Ans*.
+KDD is a process that involves discovery / extraction of useful information ( previously unknown and potentially valuable ) from large datasets.
+* It is a multiple step process, and Data Mining is one of those steps 
+* The Process of knowledge discovery in data mining follows the given set of steps :
+
+1. Data Selection : 
+* It is defined as the selection of relevant subset of the dataset for analysis.
+2. Data Cleaning : 
+* It is the removal of noise or irrelevant data in the selected dataset.
+* Various methods are used to get rid of noise, outliers, missing data and duplicate data.
+3. Data Integration : 
+* This heterogenous data is the stored into a data warehouse.
+* Integration is done by data integration tool
+4. Data Transformation and Reduction : 
+* In this step the data is transformed into a  homogeneous format.
+Helps in dimensionality reduction as well
+5. Data Mining : 
+* It is the core process of KDD
+* You can you either of the following functions of KDD
+	* Summarization
+	* Classification
+	* Regression
+	* Association
+	* Clustering
+6. Pattern Evaluation : 
+* Extracting useful and strong patterns in the data
+* Making decisions
+7. Knowledge Representation : 
+* Using visualization tools to disply the extracted patterns.
+* 
 **![](https://lh7-us.googleusercontent.com/1PeOBbWmnK-eLkeRZj2eBh3Sn2UHFd3af9Orgrv26plnQ8XZlu72C2qtP3R282c_ftzcPyFLkxZ3k_JuENOiZRmWI04AhFqIpth2BPknE-0BgJCRL_1zoRMzStBJ-3a7zv6h2btzzcERgtP2Csispio)**
 
 <hr>
