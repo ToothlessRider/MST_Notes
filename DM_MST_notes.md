@@ -195,7 +195,7 @@ Example of Association Rules
 * Association Rule : 
 	* An expression of the form X --> Y where X and Y are itemsets.
 * Rule evaluation metrics : 
-* 
+
 
 <hr>
 
@@ -205,18 +205,22 @@ KDD is a process that involves discovery / extraction of useful information ( pr
 * It is a multiple step process, and Data Mining is one of those steps 
 * The Process of knowledge discovery in data mining follows the given set of steps :
 
-1. Data Selection : 
+1.Data Selection : 
 * It is defined as the selection of relevant subset of the dataset for analysis.
-2. Data Cleaning : 
+
+2.Data Cleaning : 
 * It is the removal of noise or irrelevant data in the selected dataset.
 * Various methods are used to get rid of noise, outliers, missing data and duplicate data.
-3. Data Integration : 
+
+3.Data Integration : 
 * This heterogenous data is the stored into a data warehouse.
 * Integration is done by data integration tool
-4. Data Transformation and Reduction : 
+
+4.Data Transformation and Reduction : 
 * In this step the data is transformed into a  homogeneous format.
 Helps in dimensionality reduction as well
-5. Data Mining : 
+
+5.Data Mining : 
 * It is the core process of KDD
 * You can you either of the following functions of KDD
 	* Summarization
@@ -224,10 +228,12 @@ Helps in dimensionality reduction as well
 	* Regression
 	* Association
 	* Clustering
-6. Pattern Evaluation : 
+
+6.Pattern Evaluation : 
 * Extracting useful and strong patterns in the data
 * Making decisions
-7. Knowledge Representation : 
+
+7.Knowledge Representation : 
 * Using visualization tools to disply the extracted patterns.
 * 
 **![](https://lh7-us.googleusercontent.com/1PeOBbWmnK-eLkeRZj2eBh3Sn2UHFd3af9Orgrv26plnQ8XZlu72C2qtP3R282c_ftzcPyFLkxZ3k_JuENOiZRmWI04AhFqIpth2BPknE-0BgJCRL_1zoRMzStBJ-3a7zv6h2btzzcERgtP2Csispio)**
