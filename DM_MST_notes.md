@@ -391,7 +391,7 @@ Learning
 
 <hr>
 
-**Q12. What are decision trees ? **
+**Q12. What are decision trees ?**
 
 *Ans*. Decision trees are used to represent learned target functions
 - Each internal node tests an attribute
