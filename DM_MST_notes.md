@@ -200,7 +200,9 @@ Example of Association Rules
 <hr>
 
 **Q. What are the steps taken in the process of KDD?**
+
 *Ans*.
+#### Knowledge Discovery of Databases
 KDD is a process that involves discovery / extraction of useful information ( previously unknown and potentially valuable ) from large datasets.
 * It is a multiple step process, and Data Mining is one of those steps 
 * The Process of knowledge discovery in data mining follows the given set of steps :
