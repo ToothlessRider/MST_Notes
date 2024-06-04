@@ -20,6 +20,7 @@
 ## Exam Questions
 
 **Q1. What is Data Mining and why do we do it ? Give some  uses of data mining and examples of data mining applications**
+
 *Ans* 
 * It is the efficient discovery of *non-trivial*, *implicit*,*previously-unknown*, *potentially useful* patterns within large datasets
 * The analysis of observational datasets to find unsuspected relationships and to summarize the data in new ways, that are understandable and useful.
@@ -175,6 +176,7 @@ __ASDFFDA__
 <hr>
 
 **Q. What is association rule mining ? What is a frequent itemset ? Define the different association rule mining tasks**
+
 *Ans*. 
 Given a set of transactions, finding the rules that will predict the occurence of an item based on the occurences of other items is called association rule mining.
 **![](https://lh7-us.googleusercontent.com/8h9A3gq2Hk2g4mAuZu2kruf-CMw1bi4vGh5AxMhFAo17ptIIS_jf4XX5mV6NI3x7zLn7lG22LyWEofzEFKaET9V7qeAimrS4zzW2i_jg2Lv-pRYMCGdvyWGpVn-CwN5aYJZXi3uMp4PVoxPOX5Qws5s)**
@@ -243,6 +245,7 @@ Helps in dimensionality reduction as well
 <hr>
 
 **Q.   What are the different data mining tasks? Note the difference data mining methods**
+
 *Ans*. The difference data mining tasks are as follow : 
 * __Classification__  : Leaning a function that maps an item into a set of predefined classes.
 * __Regression__ : Learning a function that maps an item to a real value.
@@ -253,6 +256,7 @@ Helps in dimensionality reduction as well
 <hr>
 
 **Q. Why not traditional data analysis ?**
+
 *Ans* The use of traditional data analysis techniques has been reduced for the following reasonss : 
 * Tremendous amounts of data 
 	* Algorithms must be scalable so as to handle tera-butes of data
